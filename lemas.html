@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lemas.css">
+    <title>Vocabulario Latino</title>
+  </head>
+  <body>
+    <div style="margin: 15px 0px;">
+    <div id="r1">
+      <img src="logo.jpg">
+      <br> Sede San José Durango
+    </div>
+    <div class="dosc">
+      <div id="pi">
+        Busqueda por palabra o lema:
+        <input type="text" id="paole" placeholder="Ej: vir" onkeyup="entra()">
+        <br><br>
+        Frase o contexto: <br>
+        <!--<input type="text" id="context" placeholder="Ej: Viri sunt Iulius et Medus">-->
+        <br><br>
+        <textarea id="palabra">la palabra</textarea>
+        <br><br>
+        <label  id="lbldecl">
+          Mostrar declinación:
+          <input type="checkbox" id="verdecl" name="chb" onchange="mesq(this)">
+        </label>
+        <label  id="lblconj">
+          Mostrar conjugación:
+          <input type="checkbox" id="verconj" name="chb" onchange="mesq(this)">
+          <br><br><br>
+          <a target="_blank" href="ppt.html">Mostrar esquema de análisis de formas verbales</a>
+          
+        </label>
+      </div>
+      <div id="pc">
+        <div id="elesq" class="esq">
+          <h3>Esquema</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="conjunciones.js"></script>
+    <script src="interjecciones.js"></script>
+    <script src="preposiciones.js"></script>
+    <script src="adverbios.js"></script>
+    <script src="pronombre.js"></script>
+    <script src="adjetivos.js"></script>
+    <script src="verbos.js"></script>
+    <script src="sustantivos.js"></script>
+    <script src="lemas.js"></script>
+</body>
+</html>
