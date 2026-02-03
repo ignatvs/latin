@@ -485,14 +485,48 @@ function construirTablaSustantivo(obj) {
   let sufijos = obtenerSufijos(obj.decl, obj.genero);
   if (!sufijos) return "<h3>Tabla en construcción...</h3>";
 
-  let raiz = obj.raiz.replace("-", ""); 
-  let html = `<h3>${obj.lema} (${obj.genero}.)</h3>`;
+  let raiz = obj.raiz.replace("-", "");
+  
+  // 1. TÍTULO ACTUALIZADO:
+  // Capitalizamos la primera letra y agregamos la declinación
+  let lemaCap = obj.lema.charAt(0).toUpperCase() + obj.lema.slice(1);
+  let html = `<h3>${lemaCap} <span style="font-size:0.8em; font-weight:normal;">(${obj.decl} decl. - ${obj.genero}.)</span></h3>`;
+  
   html += `<table border="1" style="width:100%; text-align:center; border-collapse:collapse; background-color:white; color:black;">`;
   html += `<tr style="background:#ddd;"><th>Caso</th><th>Singular</th><th>Plural</th></tr>`;
 
   for (let i = 0; i < 6; i++) {
-    let sg = aplicarSufijo(raiz, sufijos[i], obj.lema);
+    let sg = "";
+
+    // 2. LÓGICA DE EXCEPCIONES (Aquí está la magia para Puer/Ager/Vir):
+    
+    if (i === 0) {
+        // NOMINATIVO: Siempre mostramos el lema tal cual viene en el diccionario.
+        // Esto arregla automágicamente 'puer', 'ager', 'vir' y 'dominus'.
+        sg = obj.lema; 
+
+    } else if (i === 5) {
+        // VOCATIVO:
+        // Si es 2.ª y termina en 'us' (dominus) -> se cambia por 'e'.
+        // Si no termina en 'us' (puer/ager) -> se queda igual al lema.
+        if (obj.decl === "2.ª" && obj.lema.endsWith("us")) {
+            sg = raiz + "e"; 
+        } else if (obj.decl === "2.ª") {
+            sg = obj.lema;   
+        } else {
+            // Para otras declinaciones, usamos la regla normal
+            sg = aplicarSufijo(raiz, sufijos[i], obj.lema);
+        }
+
+    } else {
+        // RESTO DE CASOS (Gen, Dat, Acu, Abl):
+        // Usamos la lógica estándar de sufijos
+        sg = aplicarSufijo(raiz, sufijos[i], obj.lema);
+    }
+
+    // EL PLURAL (Suele ser regular, así que usamos la lógica normal)
     let pl = aplicarSufijo(raiz, sufijos[i+6], obj.lema);
+    
     html += `<tr><td><b>${etiquetasCasos[i]}</b></td><td>${sg}</td><td>${pl}</td></tr>`;
   }
   html += `</table>`;
@@ -558,14 +592,23 @@ function construirTablaVerbo(obj) {
 
   for (let i = 0; i < 6; i++) {
     let forma = "";
-    if (obj.conj === "1.ª" && i === 0) { 
-        forma = raiz.slice(0, -1) + sufijos[i]; 
+    
+    // --- LÓGICA ACTUALIZADA ---
+    // Si es 1.ª (ama-), 2.ª (habe-) o 4.ª (audi-), quitamos la última letra 
+    // de la raíz para que no choque con la vocal del sufijo.
+    if (obj.conj === "1.ª" || obj.conj === "2.ª" || obj.conj === "4.ª") {
+        forma = raiz.slice(0, -1) + sufijos[i];
+        
     } else {
+        // Para la 3.ª (reg-) y Mixta (cap-), pegamos directo porque la raíz acaba en consonante
         forma = raiz + sufijos[i];
     }
+
+    // Irregulares mandan sobre todo lo anterior
     if (obj.conj === "Irregular" || obj.conj === "Defectivo") {
         forma = sufijos[i]; 
     }
+    
     html += `<tr><td><b>${etiquetasPersonas[i]}</b></td><td>${forma}</td></tr>`;
   }
   html += `</table>`;

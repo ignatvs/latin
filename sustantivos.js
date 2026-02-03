@@ -4,6 +4,7 @@ const sustantivos = [
   { lema: "āctor", tipo: "sustantivo", raiz: "actor-", decl: "3.ª", genero: "m", trad: "actor" },
   { lema: "Āfer", tipo: "sustantivo", raiz: "Afr-", decl: "2.ª", genero: "m", trad: "Afer (El Africano)" },
   { lema: "agricola", tipo: "sustantivo", raiz: "agricol-", decl: "1.ª", genero: "m", trad: "agricultor" }, // Nota: Masc de 1.ª
+  { lema: "ager", tipo: "sustantivo", raiz: "agr-", decl: "2.ª", genero: "m", trad: "campo" }, // Nota: Masc de 1.ª
   { lema: "Alexander", tipo: "sustantivo", raiz: "Alexandr-", decl: "2.ª", genero: "m", trad: "Alejandro" },
   { lema: "amīca", tipo: "sustantivo", raiz: "amic-", decl: "1.ª", genero: "f", trad: "amiga" },
   { lema: "amīcus", tipo: "sustantivo", raiz: "amic-", decl: "2.ª", genero: "m", trad: "amigo" },
@@ -210,6 +211,7 @@ const sustantivos = [
   { lema: "Quīntus", tipo: "sustantivo", raiz: "Quint-", decl: "2.ª", genero: "m", trad: "Quinto" },
   { lema: "Rēgulus", tipo: "sustantivo", raiz: "Regul-", decl: "2.ª", genero: "m", trad: "Régulo" },
   { lema: "rēs", tipo: "sustantivo", raiz: "r-", decl: "5.ª", genero: "f", trad: "cosa" },
+  { lema: "rex", tipo: "sustantivo", raiz: "reg-", decl: "3.ª", genero: "f", trad: "rey" },
   { lema: "rētiārius", tipo: "sustantivo", raiz: "retiari-", decl: "2.ª", genero: "m", trad: "reciario" },
   { lema: "rhētor", tipo: "sustantivo", raiz: "rhetor-", decl: "3.ª", genero: "m", trad: "maestro" },
   { lema: "Rōma", tipo: "sustantivo", raiz: "Rom-", decl: "1.ª", genero: "f", trad: "Roma" },
@@ -243,6 +245,14 @@ const sustantivos = [
   { lema: "taberna", tipo: "sustantivo", raiz: "tabern-", decl: "1.ª", genero: "f", trad: "taberna" },
   { lema: "tablīnum", tipo: "sustantivo", raiz: "tablin-", decl: "2.ª", genero: "n", trad: "despacho" },
   { lema: "templum", tipo: "sustantivo", raiz: "templ-", decl: "2.ª", genero: "n", trad: "templo" },
+{ 
+  lema: "tempus", 
+  tipo: "sustantivo", 
+  raiz: "tempor-", 
+  decl: "3.ª", 
+  genero: "n", 
+  trad: "tiempo" 
+},
   { lema: "tepidārium", tipo: "sustantivo", raiz: "tepidari-", decl: "2.ª", genero: "n", trad: "tepidarium" },
   { lema: "terra", tipo: "sustantivo", raiz: "terr-", decl: "1.ª", genero: "f", trad: "tierra" },
   { lema: "testis", tipo: "sustantivo", raiz: "test-", decl: "3.ª", genero: "m", trad: "testigo" },
