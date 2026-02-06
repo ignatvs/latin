@@ -1,3 +1,6 @@
+document.getElementById("paole").focus();
+
+
 // =========================================================
 // 1. CONSOLIDACIÓN DE DATOS
 // =========================================================
@@ -658,3 +661,4 @@ function aplicarSufijo(raiz, sufijo, lema) {
   return raiz + sufijo;
 
 }
+
