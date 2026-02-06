@@ -586,7 +586,7 @@ function construirTablaVerbo(obj) {
   if (!sufijos) return `<h3>${obj.lema}: Conjugación ${obj.conj} no implementada.</h3>`;
 
   let raiz = obj.raiz.replace("-", "");
-  let html = `<h3>${obj.lema} (Presente)</h3>`;
+  let html = `<h3>${obj.lema} Presente. ${obj.conj} Conj.</h3>`;
   html += `<table border="1" style="width:100%; text-align:center; border-collapse:collapse; background-color:white; color:black;">`;
   html += `<tr style="background:#ddd;"><th>Persona</th><th>Forma</th></tr>`;
 
@@ -656,4 +656,5 @@ function obtenerSufijos(decl, genero) {
 function aplicarSufijo(raiz, sufijo, lema) {
   if (sufijo === "*") return `<b>${lema}</b>`;
   return raiz + sufijo;
+
 }
