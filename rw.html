@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <textarea id="texto" rows="10" cols="50">áéíóú text &#257...</textarea><br>
+  <label id="arch"></label> <button onclick="downloadFile()">Save File</button>
+
+  <script>
+    const mes = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
+    const fecha = new Date();
+    let arch = "voc" + fecha.getDay() + mes[fecha.getMonth()] + fecha.getFullYear();
+    document.getElementById('arch').innerText = arch;
+    function downloadFile() {
+
+      const ac = [
+        'á',
+        'é',
+        'í',
+        'ó',
+        'ú'];
+
+      const mac = [
+        '&#257',
+        '&#275',
+        '&#299',
+        '&#333',
+        '&#363'];
+
+      let texto = document.getElementById('texto').value;
+      for (let i = 0; i < 5; i++)
+      {
+        document.getElementById('texto').innerHTML = texto.replace(ac[i], mac[i]);
+        texto = document.getElementById('texto').value;
+      }
+
+      //const filename = 'macrones.txt';
+      const filename = arch + '.txt';
+
+      // Create a Blob object with the data
+      const blob = new Blob([texto], { type: 'text/plain' });
+
+      // Create a link element
+      const link = document.createElement('a');
+      link.download = filename;
+      link.href = window.URL.createObjectURL(blob);
+
+      // Append link to body, click it, and remove it
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Clean up the object URL
+      window.URL.revokeObjectURL(link.href);
+    }
+  </script>
+</body>
+</html>
