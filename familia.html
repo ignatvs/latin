@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+    <title>Consulta: Familia Romana</title>
+    <style>
+      /* Estructura clásica y de alto contraste */
+      body {
+      font-family: sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 20px;
+    }
+
+    .dosc {
+      display: grid;
+      grid-template-columns: 280px 700px;
+      gap: 10px;
+      width: 1000px;
+    }
+
+    .dosc div {
+      font-family: sans-serif;
+    }
+
+    /* La lista nace oculta */
+    #lista li {
+      display: none;
+      font-size: 12pt;
+      margin-bottom: 4px;
+    }
+
+    /* Limpieza de los márgenes de la lista */
+    #lista {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .voc {
+      font-size: 8pt;
+
+    }
+    h1 {
+      border-bottom: 2px solid black; 
+      padding-bottom: 5px;
+      text-align: center;
+    }
+
+    #busqueda {
+      font-size: 1.2em; padding: 5px; border: 2px solid black; width: 150px;
+    }
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  margin-left: 5px;
+  height: auto; /* Should be removed. Only for demonstration */
+  background-color:#ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+  </head>
+  <body>
+
+    <h1 >Vocabulario: Familia Romana</h1>
+
+    <div class="dosc">
+    <div style="margin-bottom: 1em; margin-top: 10px;">
+      <h2>Buscar</h2>
+      <input type="text" id="busqueda" onkeyup="filtrar()" placeholder="Buscar palabra...">
+
+      <button onclick="limpiar()" style="font-size: 1.2em; padding: 5px; border: 2px solid black; background-color: white; color: black; font-weight: bold; cursor: pointer;">
+        Limpiar
+      </button>
+    <p id="mensaje-vacio" style="display: none; font-weight: bold; font-size: 1.2em; border: 2px solid black; padding: 10px;">
+        La palabra no se encuentra en Familia Romana.
+    </p>
+
+    <ul id="lista">
+      <li>ā/ab/abs prp + abl ⇒ de, desde, después de, por</li>
+      <li>ab-dūcere -dūxisse -ductum ⇒ retirar, quitar, llevarse</li>
+      <li>ab-errāre [1] ⇒ alejarse, extraviarse</li>
+      <li>ab-esse ab-sum ā-fuisse ⇒ estar ausente, estar alejado</li>
+      <li>ab-icere -iō -iēcisse -iectum ⇒ echar de sí, arrojar</li>
+      <li>ab-īre -eō -iisse -itum ⇒ alejarse, partir</li>
+      <li>abs v. ā/ab/abs</li>
+      <li>absēns -entis adj ⇒ ausente</li>
+      <li>abs-tinēre -uisse -tentum ⇒ mantener lejos</li>
+      <li>ac v. atque/ac</li>
+      <li>ac-cēdere -cessisse -cessum ⇒ acercarse (a)</li>
+      <li>accendere -cendisse -cēnsum ⇒ encender</li>
+      <li>ac-cidere -cidisse ⇒ suceder, acaecer</li>
+      <li>ac-cipere -io -cēpisse -ceptum ⇒ recibir</li>
+      <li>ac-cubāre -cubuisse -cubitum ⇒ estar echado a la mesa, estar tendido</li>
+      <li>ac-cumbere -cubuisse -cubitum ⇒ echarse a la mesa, tenderse, recostarse</li>
+      <li>ac-currere -currisse -cursum ⇒ acudir, llegar corriendo</li>
+      <li>ac-cūsāre [1] ⇒ acusar</li>
+      <li>ācer -cris -cre ⇒ ardiente, enérgico</li>
+      <li>acerbus -a -um ⇒ agrio, amargo</li>
+      <li>aciēs -ēī f ⇒ ejército en orden de batalla</li>
+      <li>acūtus -a -um ⇒ afilado, agudo</li>
+      <li>ad prp + ac ⇒ a, hacia, hasta, junto a</li>
+      <li>ad-dere -didisse -ditum ⇒ añadir</li>
+      <li>ad-esse ad-sum af-fuisse ⇒ estar presente, asistir</li>
+      <li>ad-hūc adv ⇒ todavía, aún</li>
+      <li>ad-icere -io -iēcisse -iectum ⇒ añadir, aumentar</li>
+      <li>ad-īre -eō -iisse -itum ⇒ dirigirse, ir (a)</li>
+      <li>ad-iungere -iūnxisse -iūnctum ⇒ agregar</li>
+      <li>ad-iuvāre -iūvisse -iūtum ⇒ ayudar</li>
+      <li>ad-mīrārī [1] dep ⇒ admirar, maravillarse</li>
+      <li>admīrātiō -ōnis f ⇒ admiración</li>
+      <li>ad-mittere -mīsisse -missum ⇒ admitir, dar entrada</li>
+      <li>ad-nectere -nexuisse -nexum ⇒ unir, pegar</li>
+      <li>ad-ōrāre [1] ⇒ adorar</li>
+      <li>adulēscēns -entis m ⇒ adolescente, joven</li>
+      <li>ad-vehere -vēxisse -vectum ⇒ transportar, importar</li>
+      <li>ad-venīre -vēnisse -ventum ⇒ llegar</li>
+      <li>adversus/-um prp + ac ⇒ en dirección a, contra</li>
+      <li>adversus -a -um ⇒ opuesto, desfavorable</li>
+      <li>aedificāre [1] ⇒ edificar, construir</li>
+      <li>aedificium -ī n ⇒ edificio</li>
+      <li>aeger -gra -grum ⇒ enfermo</li>
+      <li>aegrōtāre [1] ⇒ estar enfermo</li>
+      <li>aegrōtus -a -um ⇒ enfermo</li>
+      <li>aequē adv ⇒ igualmente</li>
+      <li>aequinoctium -ī n ⇒ equinoccio</li>
+      <li>aequus -a -um ⇒ igual, tranquilo</li>
+      <li>āēr -eris m ⇒ aire</li>
+      <li>aestās -ātis f ⇒ estío, verano</li>
+      <li>aestimāre [1] ⇒ estimar, valorar</li>
+      <li>aetās -ātis f ⇒ edad</li>
+      <li>affectus -ūs m ⇒ estado de ánimo</li>
+      <li>af-ferre at-tulisse al-lātum ⇒ traer, llevar, causar</li>
+      <li>af-ficere -iō -fēcisse -fectum ⇒ afectar</li>
+      <li>af-fīrmāre [1] ⇒ afirmar</li>
+      <li>age -ite + imp ⇒ ¡ea!, ¡vamos!</li>
+      <li>ager -grī m ⇒ campo, territorio</li>
+      <li>agere ēgisse āctum ⇒ llevar, hacer, ocuparse (de)</li>
+      <li>agmen -inis n ⇒ ejército en marcha</li>
+      <li>agnus -ī m ⇒ cordero</li>
+      <li>agricola -ae m ⇒ agricultor</li>
+      <li>ain’ ⇒ ¿es posible?, ¿de verdad?</li>
+      <li>āiō ais ait āiunt ⇒ decir</li>
+      <li>āla -ae f ⇒ ala</li>
+      <li>albus -a -um ⇒ blanco</li>
+      <li>alere aluisse altum ⇒ nutrir, sustentar</li>
+      <li>aliēnus -a -um ⇒ ajeno, de otro</li>
+      <li>ali-quandō adv ⇒ alguna vez</li>
+      <li>ali-quantum adv ⇒ bastante</li>
+      <li>ali-quī -qua -quod ⇒ algún, alguna (adj)</li>
+      <li>ali-quid ⇒ algo</li>
+      <li>ali-quis -quid ⇒ alguno, alguien (pron)</li>
+      <li>ali-quot indecl ⇒ algunos</li>
+      <li>aliter adv ⇒ de otro modo</li>
+      <li>alius -a -ud ⇒ otro</li>
+      <li>aliī... aliī ⇒ unos... otros</li>
+      <li>al-licere -iō -lēxisse -lectum ⇒ atraer</li>
+      <li>alter -era -erum ⇒ uno, el otro (de dos)</li>
+      <li>altum -ī n ⇒ alta mar</li>
+      <li>altus -a -um ⇒ alto, elevado, profundo</li>
+      <li>amāns -antis m ⇒ amante</li>
+      <li>amāre [1] ⇒ amar</li>
+      <li>ambulāre [1] ⇒ ir a pie, pasear</li>
+      <li>amīca -ae f ⇒ amiga, novia</li>
+      <li>amīcitia -ae f ⇒ amistad</li>
+      <li>amīcus -ī m ⇒ amigo</li>
+      <li>amīcus -a -um ⇒ amigo, amistoso</li>
+      <li>ā-mittere -mīsisse -missum ⇒ perder</li>
+      <li>amnis -is m ⇒ río, arroyo</li>
+      <li>amoenus -a -um ⇒ hermoso, agradable</li>
+      <li>amor -ōris m ⇒ amor</li>
+      <li>amphitheātrum -ī n ⇒ anfiteatro</li>
+      <li>an ⇒ o, o bien</li>
+      <li>ancilla -ae f ⇒ esclava, criada</li>
+      <li>angustus -a -um ⇒ angosto, estrecho</li>
+      <li>anima -ae f ⇒ soplo, aire, vida, alma</li>
+      <li>anim-ad-vertere -tisse -sum ⇒ prestar atención a, observar</li>
+      <li>animal -ālis n ⇒ ser viviente, animal</li>
+      <li>animus -ī m ⇒ espíritu, alma</li>
+      <li>annus -ī m ⇒ año</li>
+      <li>ante prp + ac ⇒ delante de, antes de</li>
+      <li>ante adv ⇒ antes</li>
+      <li>anteā adv ⇒ antes</li>
+      <li>ante-hāc adv ⇒ antes, hasta ahora</li>
+      <li>ante-quam conj ⇒ antes de, antes que</li>
+      <li>antīquus -a -um ⇒ antiguo, viejo</li>
+      <li>ānulus -ī m ⇒ anillo, sortija</li>
+      <li>anus -ūs f ⇒ vieja</li>
+      <li>aperīre -uisse apertum ⇒ abrir</li>
+      <li>apertus -a -um ⇒ abierto</li>
+      <li>apis -is f ⇒ abeja</li>
+      <li>ap-pārēre -uisse -pāritum ⇒ aparecer</li>
+      <li>appellāre [1] ⇒ llamar, hablar a</li>
+      <li>ap-pōnere -posuisse -positum ⇒ poner (encima), servir</li>
+      <li>ap-portāre [1] ⇒ llevar, traer, aportar</li>
+      <li>ap-prehendere -disse -ēnsum ⇒ asir, prender, agarrar</li>
+      <li>ap-propinquāre [1] + dat ⇒ acercarse</li>
+      <li>Aprīlis -is (mēnsis) ⇒ abril</li>
+      <li>apud prp + ac ⇒ junto a, con</li>
+      <li>aqua -ae f ⇒ agua</li>
+      <li>aquila -ae f ⇒ águila</li>
+      <li>arānea -ae f ⇒ araña, telaraña</li>
+      <li>arāre [1] ⇒ arar, labrar</li>
+      <li>arātor -ōris m ⇒ labrador</li>
+      <li>arātrum -ī n ⇒ arado</li>
+      <li>arbitrārī [1] dep ⇒ pensar, juzgar, creer</li>
+      <li>arbor -oris f ⇒ árbol</li>
+      <li>arcessere -īvisse -ītum ⇒ llamar, hacer venir</li>
+      <li>arcus -ūs m ⇒ arco</li>
+      <li>ārdēre arsisse arsum ⇒ arder, estar ardiendo</li>
+      <li>arduus -a -um ⇒ escarpado, elevado</li>
+      <li>argenteus -a -um ⇒ de plata</li>
+      <li>argentum -ī n ⇒ plata</li>
+      <li>arma -ōrum n pl ⇒ armas</li>
+      <li>armāre [1] ⇒ armar, aparejar</li>
+      <li>armātus -a -um ⇒ armado</li>
+      <li>ars artis f ⇒ habilidad, arte</li>
+      <li>as assis m ⇒ as (moneda de cobre)</li>
+      <li>a-scendere -isse -scēnsum ⇒ subir (a), trepar</li>
+      <li>asinīnus -a -um ⇒ de asno</li>
+      <li>asinus -ī m ⇒ asno, burro</li>
+      <li>a-spergere -spersisse -spersum ⇒ esparcir, añadir</li>
+      <li>a-spicere -iō -spexisse -spectum ⇒ mirar</li>
+      <li>at conj ⇒ pero</li>
+      <li>āter -tra -trum ⇒ negro, oscuro</li>
+      <li>atomus -ī f ⇒ átomo</li>
+      <li>atque/ac conj ⇒ y; que, como (comparativo)</li>
+      <li>ātrium -ī n ⇒ atrio (sala principal de la casa)</li>
+      <li>attentus -a -um ⇒ atento</li>
+      <li>audācia -ae f ⇒ audacia, osadía</li>
+      <li>audāx -ācis adj ⇒ audaz, osado</li>
+      <li>audēre ausum esse semidep ⇒ osar, atreverse a</li>
+      <li>audīre -īvisse -ītum ⇒ oír, escuchar</li>
+      <li>au-ferre abs-tulisse ab-lātum ⇒ llevarse, quitar</li>
+      <li>au-fugere -fūgisse ⇒ huir, escaparse</li>
+      <li>augēre auxisse auctum ⇒ acrecentar, aumentar</li>
+      <li>Augustus -ī (mēnsis) ⇒ agosto</li>
+      <li>aureus -a -um ⇒ de oro, áureo</li>
+      <li>aurīga -ae m ⇒ cochero</li>
+      <li>auris -is f ⇒ oreja</li>
+      <li>aurum -ī n ⇒ oro</li>
+      <li>aut conj ⇒ o</li>
+      <li>aut... aut ⇒ o... o, o bien... o bien</li>
+      <li>autem conj ⇒ pero, en cambio</li>
+      <li>autumnus -ī m ⇒ otoño</li>
+      <li>auxilium -ī n ⇒ auxilio, socorro</li>
+      <li>auxilia -ōrum n pl ⇒ tropas auxiliares</li>
+      <li>avārus -a -um ⇒ ávido, codicioso, avaro</li>
+      <li>ā-vertere -tisse -sum ⇒ alejar, desviar</li>
+      <li>avis -is f ⇒ ave, pájaro</li>
+      <li>avunculus -ī m ⇒ tío materno</li>
+      <li>baculum -ī n ⇒ bastón</li>
+      <li>bālāre [1] ⇒ balar</li>
+      <li>balneum -ī n ⇒ baño</li>
+      <li>barbarus -a -um ⇒ bárbaro, extranjero</li>
+      <li>bāsium -ī n ⇒ beso</li>
+      <li>beātus -a -um ⇒ feliz, dichoso</li>
+      <li>bellum -ī n ⇒ guerra</li>
+      <li>bellus -a -um ⇒ gracioso, bonito</li>
+      <li>bene adv ⇒ bien</li>
+      <li>beneficium -ī n ⇒ beneficio, favor</li>
+      <li>bēstia -ae f ⇒ animal, bestia</li>
+      <li>bēstiola -ae f ⇒ animal pequeño, insecto</li>
+      <li>bibere bibisse ⇒ beber</li>
+      <li>bīnī -ae -a ⇒ dos (cada uno)</li>
+      <li>bis adv ⇒ dos veces</li>
+      <li>bonum -ī n ⇒ el bien, lo bueno</li>
+      <li>bonus -a -um ⇒ bueno</li>
+      <li>bōs bovis m/f ⇒ buey</li>
+      <li>bracchium -ī n ⇒ brazo</li>
+      <li>brevī adv ⇒ en breve</li>
+      <li>brevis -e ⇒ breve, corto</li>
+      <li>cachinnus -ī m ⇒ carcajada</li>
+      <li>cadere cecidisse cāsum ⇒ caer</li>
+      <li>caecus -a -um ⇒ ciego</li>
+      <li>caedere cecīdisse caesum ⇒ golpear, herir, matar</li>
+      <li>caedēs -is f ⇒ matanza, carnicería</li>
+      <li>caelum-ī n ⇒ cielo</li>
+      <li>calamus -ī m ⇒ caña (para escribir)</li>
+      <li>calceus -ī m ⇒ calzado, zapato</li>
+      <li>calidus -a -um ⇒ caliente</li>
+      <li>calor -ōris m ⇒ calor</li>
+      <li>campus -ī m ⇒ llanura, campo</li>
+      <li>candidus -a -um ⇒ blanco brillante</li>
+      <li>canere cecinisse cantum ⇒ cantar, sonar</li>
+      <li>canis -is m/f ⇒ perro, perra</li>
+      <li>cantāre [1] ⇒ cantar</li>
+      <li>cantus -ūs m ⇒ canto, sonido</li>
+      <li>capere -iō cēpisse captum ⇒ coger, tomar, capturar</li>
+      <li>capillus -ī m ⇒ cabello</li>
+      <li>capitulum -ī n ⇒ capítulo</li>
+      <li>caput -itis n ⇒ cabeza, capital</li>
+      <li>carcer -eris m ⇒ cárcel, prisión</li>
+      <li>cardō -inis m ⇒ quicio, gozne</li>
+      <li>carēre caruisse + abl ⇒ carecer de</li>
+      <li>carmen -inis n ⇒ canto, poema</li>
+      <li>carō carnis f ⇒ carne</li>
+      <li>carpere -psisse -ptum ⇒ recoger, arrancar, pacer</li>
+      <li>cārus -a -um ⇒ caro, querido</li>
+      <li>castra -ōrum n pl ⇒ campamento</li>
+      <li>cāsus -ūs m ⇒ caída, caso</li>
+      <li>catēna -ae f ⇒ cadena</li>
+      <li>cauda -ae f ⇒ cola</li>
+      <li>causa -ae f ⇒ causa, motivo ; gen + causā ⇒ a causa de, por razón de</li>
+      <li>meā causā ⇒ por mi causa</li>
+      <li>cautus -a -um ⇒ precavido, prudente</li>
+      <li>cavēre cāvisse cautum ⇒ guardarse de, tener cuidado con</li>
+      <li>cēdere cessisse cessum ⇒ irse, retirarse, ceder</li>
+      <li>celer -eris -ere ⇒ rápido, veloz</li>
+      <li>celsus -a -um ⇒ alto, elevado</li>
+      <li>cēna -ae f ⇒ comida, cena</li>
+      <li>cēnāre [1] ⇒ comer</li>
+      <li>cēnsēre -uisse cēnsum ⇒ juzgar, pensar</li>
+      <li>centēsimus -a -um ⇒ centésimo</li>
+      <li>centum ⇒ cien</li>
+      <li>cēra -ae f ⇒ cera</li>
+      <li>cerebrum -ī n ⇒ cerebro</li>
+      <li>cernere crēvisse crētum ⇒ distinguir, discernir</li>
+      <li>certāmen -inis n ⇒ combate, contienda</li>
+      <li>certāre [1] ⇒ combatir, disputar</li>
+      <li>certē adv ⇒ seguramente, al menos</li>
+      <li>certō adv ⇒ seguramente, sin duda</li>
+      <li>certus -a -um ⇒ cierto, seguro</li>
+      <li>cessāre [1] ⇒ tardar, cesar, interrumpir</li>
+      <li>cēterī -ae -a ⇒ los otros, los demás</li>
+      <li>cēterum adv ⇒ por lo demás, pero</li>
+      <li>cēterus -a -um ⇒ restante</li>
+      <li>charta -ae f ⇒ papel</li>
+      <li>cibus -ī m ⇒ comida, cebo</li>
+      <li>cingere cīnxisse cīnctum ⇒ rodear, ceñir</li>
+      <li>circā prp + ac ⇒ alrededor de, cerca de, aproximadamente</li>
+      <li>circēnsēs -ium m pl ⇒ juegos de circo</li>
+      <li>circēnsis -e ⇒ del circo</li>
+      <li>circiter adv ⇒ alrededor, cerca de</li>
+      <li>circum prp + ac ⇒ alrededor de, cerca de</li>
+      <li>circum-dare -dedisse -datum ⇒ circundar, cercar</li>
+      <li>circum-silīre -uisse ⇒ saltar alrededor</li>
+      <li>circus -ī m ⇒ circo</li>
+      <li>cis prp + ac ⇒ de este lado de</li>
+      <li>citerior -ius ⇒ que está más acá</li>
+      <li>citrā prp + ac ⇒ a este lado de</li>
+      <li>cīvis -is m/f ⇒ ciudadano, conciudadano</li>
+      <li>clāmāre [1] ⇒ gritar</li>
+      <li>clāmor -ōris m ⇒ clamor, griterío</li>
+      <li>clārus -a -um ⇒ claro, brillante</li>
+      <li>classis -is f ⇒ flota</li>
+      <li>claudere clausisse clausum ⇒ cerrar</li>
+      <li>claudus -a -um ⇒ cojo</li>
+      <li>clausus -a -um ⇒ cerrado</li>
+      <li>clāvis -is f ⇒ llave</li>
+      <li>clēmēns -entis adj ⇒ dulce, clemente</li>
+      <li>cocus -ī m ⇒ cocinero</li>
+      <li>coep- v. incipere</li>
+      <li>cōgere co-ēgisse co-āctum ⇒ forzar, obligar</li>
+      <li>cōgitāre [1] ⇒ pensar</li>
+      <li>cognōmen -inis n ⇒ sobrenombre, apodo</li>
+      <li>cognōscere -nōvisse -nitum ⇒ conocer, reconocer</li>
+      <li>cohors -rtis f ⇒ cohorte, grupo de soldados</li>
+      <li>colere coluisse cultum ⇒ cultivar</li>
+      <li>collis -is m ⇒ colina, collado</li>
+      <li>col-loquī -locūtum esse dep ⇒ conversar</li>
+      <li>colloquium -ī n ⇒ conversación, coloquio</li>
+      <li>collum -ī n ⇒ cuello</li>
+      <li>colōnus -ī m ⇒ campesino, colono</li>
+      <li>color -ōris m ⇒ color</li>
+      <li>columna -ae f ⇒ columna</li>
+      <li>comes -itis m ⇒ compañero</li>
+      <li>comitārī [1] dep ⇒ acompañar</li>
+      <li>com-memorāre [1] ⇒ hacer mención de, recordar</li>
+      <li>commūnis -e ⇒ común</li>
+      <li>cōmoedia -ae f ⇒ comedia</li>
+      <li>com-parāre [1] ⇒ comparar</li>
+      <li>com-plectī -plexum esse dep ⇒ abrazar</li>
+      <li>com-plēre -plēvisse -plētum ⇒ llenar, completar</li>
+      <li>com-plūrēs -a ⇒ varios, muchos</li>
+      <li>com-putāre [1] ⇒ calcular, contar</li>
+      <li>cōnārī [1] dep ⇒ intentar, esforzarse</li>
+      <li>con-currere -currisse -cursum ⇒ acudir corriendo, encontrarse</li>
+      <li>condiciō -ōnis f ⇒ condición</li>
+      <li>cōn-ficere -iō -fēcisse -fectum ⇒ hacer, acabar</li>
+      <li>cōn-fīdere + dat ⇒ confiar en</li>
+      <li>cōn-fitērī -fessum esse dep ⇒ confesar</li>
+      <li>con-iungere -iunxisse -iunctum ⇒ juntar, reunir</li>
+      <li>coniūnx -iugis m/f ⇒ cónyuge, marido o mujer</li>
+      <li>cōn-scendere -disse -scēnsum ⇒ subir (a), ascender, elevarse</li>
+      <li>cōn-sequī -secūtum esse dep ⇒ seguir, alcanzar</li>
+      <li>cōn-sīdere -sēdisse -sessum ⇒ sentarse</li>
+      <li>cōnsilium -ī n ⇒ consejo, decisión, plan, propósito</li>
+      <li>cōn-sistere -stitisse ⇒ ponerse, detenerse</li>
+      <li>cōn-sōlārī [1] dep ⇒ consolar</li>
+      <li>cōnsonāns -antis f ⇒ consonante</li>
+      <li>cōnspectus -ūs m ⇒ vista</li>
+      <li>cōn-spicere -spexisse -spectum ⇒ ver, observar</li>
+      <li>cōnstāns -antis adj ⇒ constante, firme</li>
+      <li>cōn-stāre -stitisse + ab/gen ⇒ costar</li>
+      <li>cōnstāre ex ⇒ constar de</li>
+      <li>cōn-stituere -uisse -tūtum ⇒ determinar, decidir</li>
+      <li>cōn-sūmere -sūmpsisse -sūmptum ⇒ consumir, agotar, pasar (el tiempo)</li>
+      <li>con-temnere -tempsisse -temptum ⇒ despreciar</li>
+      <li>con-tinēre -tinuisse -tentum ⇒ contener</li>
+      <li>continuō adv ⇒ en seguida</li>
+      <li>contrā prp + ac ⇒ contra</li>
+      <li>con-trahere -trāxisse -tractum ⇒ contraer, fruncir</li>
+      <li>contrārius -a -um ⇒ contrario</li>
+      <li>con-turbāre [1] ⇒ turbar, desordenar</li>
+      <li>con-venīre -vēnisse -ventum (ad + ac; dat) ⇒ convenir, ir bien, reunirse</li>
+      <li>con-vertere -tisse -sum ⇒ volver, transformar, convertir</li>
+      <li>convīva -ae m/f ⇒ comensal, convidado</li>
+      <li>convīvium -ī n ⇒ festín, banquete</li>
+      <li>con-vocāre [1] ⇒ llamar, convocar</li>
+      <li>cōpia -ae f ⇒ abundancia, cantidad</li>
+      <li>cōpulāre [1] ⇒ atar, unir</li>
+      <li>coquere coxisse coctum ⇒ cocer, guisar</li>
+      <li>cor cordis n ⇒ corazón</li>
+      <li>cōram prp + abl ⇒ en presencia de</li>
+      <li>cornū -ūs n ⇒ cuerno</li>
+      <li>corpus -oris n ⇒ cuerpo</li>
+      <li>cor-rigere -rēxisse -rēctum ⇒ corregir, enmendar</li>
+      <li>cotīdiē adv ⇒ diariamente, cada día</li>
+      <li>crās adv ⇒ mañana (el día siguiente)</li>
+      <li>crassus -a -um ⇒ gordo, grueso</li>
+      <li>crēdere -didisse -ditum + dat ⇒ creer (en), confiar</li>
+      <li>crēscere crēvisse crētum ⇒ crecer</li>
+      <li>cruciāre [1] ⇒ atormentar, torturar</li>
+      <li>crūdēlis -e ⇒ cruel</li>
+      <li>cruentus -a –um ⇒ ensangrentado, sangriento</li>
+      <li>cruor -ōris m ⇒ sangre</li>
+      <li>crūs -ūris n ⇒ pierna</li>
+      <li>crux -ucis f ⇒ cruz</li>
+      <li>cubāre cubuisse cubitum ⇒ estar echado, estar tendido</li>
+      <li>cubiculum -ī n ⇒ dormitorio, alcoba</li>
+      <li>culīna -ae f ⇒ cocina</li>
+      <li>culter -trī m ⇒ cuchillo</li>
+      <li>cum prp + abl ⇒ con</li>
+      <li>cum conj ⇒ cuando, puesto que, como</li>
+      <li>cum prīmum + perf ⇒ tan pronto como</li>
+      <li>cūnae -ārum f pl ⇒ cuna</li>
+      <li>cūnctus -a -um ⇒ todo, entero; pl todos</li>
+      <li>cupere -iō cupīvisse cupītum ⇒ desear</li>
+      <li>cupiditās -ātis f ⇒ deseo</li>
+      <li>cupidus -a -um (+ gen) ⇒ deseoso, ávido</li>
+      <li>cūr adv ⇒ ¿por qué?</li>
+      <li>cūra -ae f ⇒ cuidado</li>
+      <li>cūrāre [1] ⇒ cuidar, preocuparse de</li>
+      <li>currere cucurrisse cursum ⇒ correr</li>
+      <li>currus -ūs m ⇒ carro</li>
+      <li>cursus -ūs m ⇒ carrera, curso, rumbo</li>
+      <li>cūstōdīre -īvisse -ītum ⇒ custodiar, guardar</li>
+      <li>dare dedisse datum ⇒ dar</li>
+      <li>dē prp + abl ⇒ de, desde arriba</li>
+      <li>dea -ae f ⇒ diosa</li>
+      <li>dēbēre -uisse -itum ⇒ deber</li>
+      <li>dēbilis -e ⇒ débil</li>
+      <li>decem ⇒ diez</li>
+      <li>December -bris (mēnsis) ⇒ diciembre</li>
+      <li>decēre -uisse ⇒ convenir, ser apropiado</li>
+      <li>deciēs adv ⇒ diez veces</li>
+      <li>decimus -a -um ⇒ décimo</li>
+      <li>dēclīnāre [1] ⇒ declinar</li>
+      <li>de-esse dē-sum dē-fuisse ⇒ faltar, no asistir</li>
+      <li>dē-fendere -isse -fēnsum ⇒ defender</li>
+      <li>de-inde/ dein adv ⇒ después, luego</li>
+      <li>dēlectāre [1] ⇒ deleitar, complacer</li>
+      <li>dēlēre -lēvisse -lētum ⇒ borrar, destruir</li>
+      <li>dēliciae -ārum f pl ⇒ delicias, goce</li>
+      <li>delphīnus -ī m ⇒ delfín</li>
+      <li>dēmere dēmpsisse dēmptum ⇒ quitar</li>
+      <li>dē-mōnstrāre [1] ⇒ mostrar, demostrar</li>
+      <li>dēmum adv ⇒ sólo, por fin</li>
+      <li>dēnārius -ī m ⇒ denario (moneda de plata)</li>
+      <li>dēnī -ae -a ⇒ diez (cada uno)</li>
+      <li>dēnique adv ⇒ en fin, finalmente</li>
+      <li>dēns dentis m ⇒ diente</li>
+      <li>dē-nuō adv ⇒ de nuevo</li>
+      <li>deorsum adv ⇒ abajo</li>
+      <li>dēpōnēns -ntis ⇒ deponente (verbo)</li>
+      <li>dē-rīdēre -rīsisse -rīsum ⇒ burlarse de, reirse</li>
+      <li>dē-scendere -disse -scēnsum ⇒ descender</li>
+      <li>dē-serere -seruisse -sertum ⇒ abandonar, dejar</li>
+      <li>dēsīderāre [1] ⇒ echar de menos</li>
+      <li>dē-silīre -siluisse -sultum ⇒ saltar abajo</li>
+      <li>dē-sinere -siisse -situm ⇒ dejar, cesar</li>
+      <li>dē-sistere -stitisse -stitum ⇒ desistir de, cesar de</li>
+      <li>dē-spērāre [1] ⇒ desesperar (de)</li>
+      <li>dē-spicere -iō -spexisse -spectum ⇒ mirar abajo, desdeñar, menospreciar</li>
+      <li>dē-tergēre -tersisse -tersum ⇒ enjugar, limpiar</li>
+      <li>dē-terrēre -uisse -itum ⇒ apartar, desviar</li>
+      <li>dē-trahere -trāxisse -tractum ⇒ arrancar, sacar, quitar</li>
+      <li>deus -ī m, pl deī/diī/dī ⇒ dios</li>
+      <li>dē-vorāre [1] ⇒ tragar, engullir</li>
+      <li>dexter -tra -trum ⇒ derecho</li>
+      <li>dextra -ae f ⇒ la (mano) derecha</li>
+      <li>dīcere dīxisse dictum ⇒ decir, llamar, hablar</li>
+      <li>dictāre [1] ⇒ dictar</li>
+      <li>dictum -ī n ⇒ palabra</li>
+      <li>diēs -ēī m/f ⇒ día, fecha</li>
+      <li>dif-ficilis -e ⇒ difícil</li>
+      <li>digitus -ī m ⇒ dedo</li>
+      <li>dignus -a -um ⇒ digno</li>
+      <li>diligēns -entis adj ⇒ diligente, cuidadoso</li>
+      <li>dīligere -lēxisse -lēctum ⇒ amar, apreciar</li>
+      <li>dīmidius -a -um ⇒ medio</li>
+      <li>dī-mittere -mīsisse -missum ⇒ despedir</li>
+      <li>dīrus -a -um ⇒ horroroso</li>
+      <li>dis-cēdere -cessisse -cessum ⇒ alejarse de, irse</li>
+      <li>discere didicisse ⇒ aprender</li>
+      <li>discipulus -ī m ⇒ alumno, discípulo</li>
+      <li>dis-iungere -iūnxisse -iūnctum ⇒ desunir, separar</li>
+      <li>dis-suādēre -suāsisse -suāsum ⇒ disuadir, desaconsejar</li>
+      <li>diū, comp diūtius adv ⇒ hace tiempo, durante largo tiempo</li>
+      <li>dīves -itis adj ⇒ rico</li>
+      <li>dīvidere -sisse -sum ⇒ separar, dividir</li>
+      <li>dīvitiae -ārum f pl ⇒ riquezas</li>
+      <li>docēre -uisse doctum ⇒ enseñar, instruir</li>
+      <li>doctus -a -um ⇒ instruido, docto, sabio</li>
+      <li>dolēre -uisse dolitum ⇒ doler, afligirse</li>
+      <li>dolor -ōris m ⇒ dolor</li>
+      <li>domī (loc) ⇒ en casa</li>
+      <li>domina -ae f ⇒ ama, dueña, señora</li>
+      <li>dominus -ī m ⇒ amo, dueño, señor</li>
+      <li>domum adv ⇒ a casa</li>
+      <li>domus -ūs f, abl -ō ⇒ casa</li>
+      <li>dōnāre [1] ⇒ dar, regalar</li>
+      <li>dōnec conj ⇒ mientras, en tanto que</li>
+      <li>dōnum -ī n ⇒ don, regalo</li>
+      <li>dormīre -īvisse -ītum ⇒ dormir</li>
+      <li>dorsum -ī n ⇒ dorso, lomo</li>
+      <li>dubitāre [1] ⇒ dudar</li>
+      <li>dubius -a -um ⇒ indeciso, dudoso</li>
+      <li>du-centī -ae -a ⇒ doscientos</li>
+      <li>dūcere dūxisse ductum ⇒ conducir, guiar, dirigir</li>
+      <li>uxōrem dūcere ⇒ casarse (un hombre con una mujer)</li>
+      <li>dulcis -e ⇒ dulce</li>
+      <li>dum conj ⇒ mientras, en tanto que</li>
+      <li>dum-modo conj ⇒ con tal que</li>
+      <li>dumtaxat adv ⇒ sólo, por lo menos</li>
+      <li>duo -ae -o ⇒ dos</li>
+      <li>duo-decim ⇒ doce</li>
+      <li>duo-decimus -a -um ⇒ duodécimo</li>
+      <li>duo-dē-trīgintā ⇒ veintiocho</li>
+      <li>dūrus -a -um ⇒ duro</li>
+      <li>dux ducis m ⇒ guia, general</li>
+      <li>ē v. ex/ē</li>
+      <li>eā adv ⇒ por allí</li>
+      <li>ēbrius -a -um ⇒ ebrio, borracho</li>
+      <li>ecce adv ⇒ he aquí, aquí está</li>
+      <li>ēducāre [1] ⇒ educar</li>
+      <li>ē-dūcere -dūxisse -ductum ⇒ hacer salir</li>
+      <li>ef-ficere -iō -fēcisse -fectum ⇒ producir, lograr</li>
+      <li>ef-fugere -iō -fūgisse ⇒ huir, escapar</li>
+      <li>ef-fundere -fūdisse -fūsum ⇒ verter, derramar</li>
+      <li>ego mē mihi/mī mē-cum ⇒ yo, mí, me, conmigo</li>
+      <li>ē-gredī -ior ēgressum esse dep ⇒ salir</li>
+      <li>ēgregius -a -um ⇒ egregio, eminente</li>
+      <li>ē-icere -iō -iēcisse -iectum ⇒ echar fuera</li>
+      <li>ē-līdere -līsisse -līsum ⇒ elidir, suprimir</li>
+      <li>ē-ligere -lēgisse -lēctum ⇒ elegir</li>
+      <li>emere ēmisse ēmptum ⇒ comprar</li>
+      <li>ēn interj ⇒ he aquí, ea!, vamos!</li>
+      <li>enim conj ⇒ en efecto, pues</li>
+      <li>ēnsis -is m ⇒ espada</li>
+      <li>eō adv ⇒ (hacia) allí</li>
+      <li>epigramma -atis n ⇒ epigrama</li>
+      <li>epistula -ae f ⇒ carta, misiva</li>
+      <li>eques -itis m ⇒ jinete</li>
+      <li>equidem adv ⇒ ciertamente, por mi parte</li>
+      <li>equitātus -ūs m ⇒ caballería</li>
+      <li>equus -ī m ⇒ caballo</li>
+      <li>ergā prp + ac ⇒ hacia, para con</li>
+      <li>ergō conj ⇒ por tanto, luego, así pues</li>
+      <li>ē-ripere -iō -ripuisse -reptum ⇒ arrebatar, robar</li>
+      <li>errāre [1] ⇒ errar, vagar</li>
+      <li>ē-rubēscere -rubuisse ⇒ enrojecer</li>
+      <li>ē-rumpere -rūpisse -ruptum ⇒ precipitarse fuera</li>
+      <li>erus -ī m ⇒ amo, dueño, señor</li>
+      <li>esse sum fuisse futūrum esse/fore ⇒ ser, estar, haber</li>
+      <li>ēsse edō ēdisse ēsum ⇒ comer</li>
+      <li>et conj ⇒ y, también</li>
+      <li>et... et ⇒ tanto... como</li>
+      <li>et-enim conj ⇒ y en efecto</li>
+      <li>etiam adv ⇒ además, también, aún</li>
+      <li>etiam atque etiam ⇒ una y otra vez</li>
+      <li>non solum... sed etiam ⇒ no sólo... sino también</li>
+      <li>etiam si conj ⇒ aunque, aun si</li>
+      <li>etiam-nunc adv ⇒ todavía</li>
+      <li>et-sī conj ⇒ aunque, si bien</li>
+      <li>ē-volāre [1] ⇒ volar, salir volando</li>
+      <li>ē-volvere -visse ēvolūtum ⇒ desplegar, abrir</li>
+      <li>ex/ē prp + abl ⇒ de, desde</li>
+      <li>ex-audīre -īvisse -ītum ⇒ oír, enterarse</li>
+      <li>ex-citāre [1] ⇒ despertar, excitar</li>
+      <li>ex-clāmāre [1] ⇒ gritar, exclamar</li>
+      <li>ex-cōgitāre [1] ⇒ imaginar, inventar</li>
+      <li>ex-cruciāre [1] ⇒ torturar, atormentar</li>
+      <li>ex-currere -currisse -cursum ⇒ salir corriendo</li>
+      <li>ex-cūsāre [1] ⇒ excusar, disculpar</li>
+      <li>exemplum -ī n ⇒ ejemplo, modelo</li>
+      <li>exercitus -ūs m ⇒ ejército</li>
+      <li>ex-haurīre -sisse -stum ⇒ vaciar, apurar</li>
+      <li>exiguus -a -um ⇒ pequeño, exiguo</li>
+      <li>ex-īre -eō -iisse -itum ⇒ salir, irse</li>
+      <li>ex-īstimāre [1] ⇒ juzgar, pensar</li>
+      <li>exitus -ūs m ⇒ salida, fin</li>
+      <li>ex-ōrnāre [1] ⇒ adornar</li>
+      <li>ex-plānāre [1] ⇒ allanar, explicar</li>
+      <li>ex-pōnere -pōsuisse -positum ⇒ exponer, depositar, desembarcar</li>
+      <li>ex-pugnāre [1] ⇒ conquistar, expugnar</li>
+      <li>ex-pugnātiō -ōnis f ⇒ conquista, asalto</li>
+      <li>ex-spectāre [1] ⇒ esperar, aguardar</li>
+      <li>ex-tendere -disse -tentum ⇒ extender</li>
+      <li>extrā prp + ac ⇒ fuera de</li>
+      <li>faber -brī m ⇒ artesano, herrero, carpintero</li>
+      <li>fābula -ae f ⇒ cuento, fábula, drama</li>
+      <li>fābulārī [1] dep ⇒ hablar, charlar</li>
+      <li>facere -iō fēcisse factum ⇒ hacer</li>
+      <li>faciēs -ēī f ⇒ rostro, cara</li>
+      <li>facile adv ⇒ fácilmente</li>
+      <li>facilis -e, sup -illimus ⇒ fácil</li>
+      <li>factum -ī n ⇒ hecho, acción</li>
+      <li>fallāx -ācis adj ⇒ falaz, engañador</li>
+      <li>fallere fefellisse falsum ⇒ engañar</li>
+      <li>falsus -a -um ⇒ falso, engañoso</li>
+      <li>falx -cis f ⇒ hoz, podadera</li>
+      <li>fāma -ae f ⇒ noticia, fama</li>
+      <li>famēs -is f ⇒ hambre</li>
+      <li>familia -ae f ⇒ familia, esclavos</li>
+      <li>fārī fātum esse dep ⇒ hablar</li>
+      <li>fatērī fassum esse dep ⇒ confesar</li>
+      <li>fatīgāre [1] ⇒ fatigar</li>
+      <li>fātum -ī n ⇒ hado, destino, muerte</li>
+      <li>favēre fāvisse fautum + dat ⇒ ser</li>
+      <li>favorable, favorecer</li>
+      <li>Februārius -ī (mēnsis) ⇒ febrero</li>
+      <li>fēlīcitās -ātis f ⇒ felicidad, dicha</li>
+      <li>fēlīx -īcis adj ⇒ feliz, dichoso</li>
+      <li>fēmina -ae f ⇒ mujer</li>
+      <li>fenestra -ae f ⇒ ventana</li>
+      <li>fera -ae f ⇒ fiera</li>
+      <li>ferē adv ⇒ casi, alrededor de, unos</li>
+      <li>ferōx -ōcis adj ⇒ fogoso, salvaje, feroz</li>
+      <li>ferre ferō tulisse lātum ⇒ llevar, soportar</li>
+      <li>ferreus -a -um ⇒ de hierro, férreo</li>
+      <li>ferrum -ī n ⇒ hierro</li>
+      <li>fertilis -e ⇒ fértil</li>
+      <li>ferus -a -um ⇒ salvaje</li>
+      <li>fessus -a -um ⇒ fatigado, cansado</li>
+      <li>-ficere -iō -fēcisse -fectum < facere</li>
+      <li>fīdere fīsum esse + dat ⇒ confiarse</li>
+      <li>fidēs -eī f ⇒ confianza, fe, lealtad</li>
+      <li>fidēs -ium f pl ⇒ lira</li>
+      <li>fidicen -inis m ⇒ tocador de lira</li>
+      <li>fīdus -a -um ⇒ fiel, leal</li>
+      <li>fierī fīō factum esse dep ⇒ ser hecho, hacerse, suceder</li>
+      <li>fīgere fixisse fixum ⇒ fijar</li>
+      <li>fīlia -ae f ⇒ hija</li>
+      <li>fīliola -ae f ⇒ hijita</li>
+      <li>fīliolus -ī m ⇒ hijito</li>
+      <li>fīlius -ī m ⇒ hijo</li>
+      <li>fīlum -ī n ⇒ hilo</li>
+      <li>fīnīre -īvisse -ītum ⇒ limitar, poner fin</li>
+      <li>fīnis -is m ⇒ límite, fin</li>
+      <li>flāre [1] ⇒ soplar</li>
+      <li>flectere flexisse flexum ⇒ doblar</li>
+      <li>flēre flēvisse flētum ⇒ llorar</li>
+      <li>flōs -ōris m ⇒ flor</li>
+      <li>flūctus -ūs m ⇒ ola, oleaje</li>
+      <li>fluere flūxisse flūxum ⇒ fluir</li>
+      <li>flūmen -inis n ⇒ río, torrente</li>
+      <li>fluvius -ī m ⇒ río</li>
+      <li>foedus -a -um ⇒ feo, desagradable</li>
+      <li>folium -ī n ⇒ hoja</li>
+      <li>forās adv ⇒ afuera</li>
+      <li>foris -is f ⇒ puerta</li>
+      <li>forīs adv ⇒ fuera</li>
+      <li>fōrma -ae f ⇒ forma, belleza</li>
+      <li>fōrmōsus -a -um ⇒ hermoso, bello</li>
+      <li>forsitan adv ⇒ quizá, acaso</li>
+      <li>fortasse adv ⇒ quizá, acaso</li>
+      <li>forte adv ⇒ por casualidad, acaso</li>
+      <li>fortis -e ⇒ fuerte, valiente</li>
+      <li>fortūna -ae f ⇒ fortuna, suerte</li>
+      <li>forum -ī n ⇒ plaza pública, foro</li>
+      <li>fossa -ae f ⇒ foso</li>
+      <li>frangere frēgisse frāctum ⇒ romper, quebrar</li>
+      <li>frāter -tris m ⇒ hermano</li>
+      <li>fremere -uisse -itum ⇒ gruñir, rugir, etc.</li>
+      <li>frequēns -entis adj ⇒ numeroso, frecuente</li>
+      <li>fretum -ī n ⇒ estrecho, brazo de mar</li>
+      <li>frīgēre -- -- ⇒ tener frío, helarse</li>
+      <li>frīgidus -a -um ⇒ frío, helado</li>
+      <li>frīgus -oris n ⇒ frío</li>
+      <li>frōns -ontis f ⇒ frente</li>
+      <li>frūgēs -um f pl ⇒ frutos</li>
+      <li>fruī fructum esse dep + abl ⇒ gozar,</li>
+      <li>disfrutar</li>
+      <li>frūmentum -ī n ⇒ grano</li>
+      <li>frūstrā adv ⇒ en vano</li>
+      <li>fuga -ae f ⇒ fuga</li>
+      <li>fugere -iō fūgisse ⇒ huir, escapar</li>
+      <li>fugitīvus -a -um ⇒ fugitivo</li>
+      <li>fulgur -uris n ⇒ relámpago</li>
+      <li>fūmus -ī m ⇒ humo</li>
+      <li>fundere fūdisse fūsum ⇒ verter, derramar</li>
+      <li>funditus adv ⇒ hasta el fondo, a fondo</li>
+      <li>fundus -ī m ⇒ fondo, finca</li>
+      <li>fūr -is m ⇒ ladrón</li>
+      <li>fūrtum -ī n ⇒ robo, hurto</li>
+      <li>futūrus -a -um (v. esse) ⇒ futuro, venidero</li>
+      <li>gallus -ī m ⇒ gallo</li>
+      <li>gaudēre gavīsum esse semidep ⇒ gozar, alegrarse</li>
+      <li>gaudium -ī n ⇒ gozo, alegría</li>
+      <li>geminus -a -um ⇒ gemelo</li>
+      <li>gemma -ae f ⇒ piedra preciosa, gema</li>
+      <li>gemmātus -a -um ⇒ con piedras preciosas</li>
+      <li>gena -ae f ⇒ mejilla, carillo</li>
+      <li>gēns gentis f ⇒ raza, nación, pueblo</li>
+      <li>genū -ūs n ⇒ rodilla</li>
+      <li>genus -eris n ⇒ género, especie</li>
+      <li>gerere gessisse gestum ⇒ llevar, tener, hacer</li>
+      <li>glaciēs -ēī f ⇒ hielo</li>
+      <li>gladiātor -ōris m ⇒ gladiador</li>
+      <li>gladiātōrius -a -um ⇒ de gladiador</li>
+      <li>gladius -ī m ⇒ espada</li>
+      <li>glōria -ae f ⇒ gloria</li>
+      <li>glōriōsus -a -um ⇒ glorioso, jactancioso</li>
+      <li>gracilis -e ⇒ grácil, esbelto</li>
+      <li>gradus -ūs m ⇒ paso, grado, peldaño</li>
+      <li>Graecus -a -um ⇒ griego</li>
+      <li>grammatica -ae f ⇒ gramática</li>
+      <li>grammaticus -a -um ⇒ gramatical, de gramática</li>
+      <li>grātia -ae f ⇒ favor, agradecimiento</li>
+      <li>gen (/meā) + grātiā ⇒ por, por causa de</li>
+      <li>grātiam habēre ⇒ estar agradecido</li>
+      <li>grātiās agere ⇒ dar las gracias</li>
+      <li>grātus -a -um ⇒ grato, agradecido</li>
+      <li>gravida adj f ⇒ embarazada</li>
+      <li>gravis -e ⇒ pesado</li>
+      <li>gremium -ī n ⇒ regazo, seno</li>
+      <li>grex -egis m ⇒ rebaño, manada</li>
+      <li>gubernāre [1] ⇒ pilotar, gobernar, dirigir</li>
+      <li>gubernātor -ōris m ⇒ timonel</li>
+      <li>gustāre [1] ⇒ gustar, probar</li>
+      <li>habēre -uisse -itum ⇒ tener, poseer, reputar; sē habēre ⇒ ser, encontrarse (de un modo)</li>
+      <li>habitāre [1] ⇒ habitar</li>
+      <li>hāc adv ⇒ por aquí</li>
+      <li>hasta -ae f ⇒ asta, lanza</li>
+      <li>haud adv ⇒ no</li>
+      <li>haurīre hausisse haustum ⇒ sacar</li>
+      <li>herba -ae f ⇒ hierba</li>
+      <li>herī adv ⇒ ayer</li>
+      <li>heu interj ⇒ ¡ah!, ¡ay!</li>
+      <li>heus interj ⇒ ¡eh!, ¡hola!</li>
+      <li>hic haec hoc ⇒ este, éste</li>
+      <li>hīc adv ⇒ aquí</li>
+      <li>hiems -mis f ⇒ invierno</li>
+      <li>hinc adv ⇒ de aquí</li>
+      <li>hinnīre ⇒ relinchar</li>
+      <li>hodiē adv ⇒ hoy</li>
+      <li>holus -eris n ⇒ hortaliza, verdura</li>
+      <li>homō -inis m ⇒ hombre, persona</li>
+      <li>hōra -ae f ⇒ hora</li>
+      <li>horrendus -a -um ⇒ horrendo, espantoso</li>
+      <li>horrēre -uisse ⇒ estar erizado, temblar,</li>
+      <li>tener horror a</li>
+      <li>hortārī [1] dep ⇒ animar, exhortar</li>
+      <li>hortus -ī m ⇒ jardín, huerto</li>
+      <li>hospes -itis m ⇒ huésped</li>
+      <li>hostis -is m ⇒ enemigo</li>
+      <li>hūc adv ⇒ acá, (hacia) aquí</li>
+      <li>hūmānus -a -um ⇒ humano</li>
+      <li>humī (loc) ⇒ a tierra, en tierra</li>
+      <li>humilis -e ⇒ bajo, humilde</li>
+      <li>humus -ī f ⇒ tierra, suelo</li>
+      <li>iacere -iō iēcisse iactum ⇒ echar, arrojar, lanzar</li>
+      <li>iacēre -uisse ⇒ yacer, estar echado</li>
+      <li>iactāre [1] ⇒ arrojar, agitar</li>
+      <li>iactūra -ae f ⇒ acción de arrojar, pérdida</li>
+      <li>iam adv ⇒ ya, ahora</li>
+      <li>iānitor -ōris m ⇒ portero</li>
+      <li>iānua -ae f ⇒ puerta</li>
+      <li>Iānuārius -ī (mēnsis) ⇒ enero</li>
+      <li>ibi adv ⇒ allí</li>
+      <li>-icere -iō -iēcisse -iectum < iacere</li>
+      <li>īdem eadem idem ⇒ el mismo</li>
+      <li>id-eō adv ⇒ por esto</li>
+      <li>idōneus -a -um ⇒ apropiado, idóneo</li>
+      <li>īdūs -uum f pl ⇒ Idus, el 13 (o 15) del mes</li>
+      <li>iecur -oris n ⇒ hígado</li>
+      <li>igitur conj ⇒ así pues, pues</li>
+      <li>ignārus -a -um ⇒ ignorante</li>
+      <li>ignis -is m ⇒ fuego</li>
+      <li>ignōrāre [1] ⇒ ignorar, desconocer</li>
+      <li>ignōscere ignōvisse ignōtum + dat ⇒ perdonar</li>
+      <li>ignōtus -a -um ⇒ desconocido</li>
+      <li>ille -a -ud ⇒ aquel</li>
+      <li>illac adv ⇒ por allí</li>
+      <li>illīc adv ⇒ allí, en aquel lugar</li>
+      <li>illinc adv ⇒ de allí</li>
+      <li>illūc adv ⇒ (hacia) allí, allá</li>
+      <li>illūstrāre [1] ⇒ alumbrar, iluminar</li>
+      <li>imāgō -inis f ⇒ imagen</li>
+      <li>imber -bris m ⇒ lluvia</li>
+      <li>imitārī [1] dep ⇒ imitar</li>
+      <li>im-mātūrus -a -um ⇒ inmaduro, temprano</li>
+      <li>immō adv ⇒ no, por el contrario, antes bien</li>
+      <li>im-mortālis -e ⇒ inmortal</li>
+      <li>im-pār -aris adj ⇒ desigual</li>
+      <li>im-patiēns -entis adj ⇒ impaciente</li>
+      <li>im-pendēre - - + dat ⇒ amenazar, cernerse sobre</li>
+      <li>imperāre [1] + dat ⇒ mandar, ordenar</li>
+      <li>imperātor -ōris m ⇒ general (en jefe)</li>
+      <li>imperium -ī n ⇒ mando, orden, imperio</li>
+      <li>impetus -ūs m ⇒ embestida, ataque</li>
+      <li>im-piger -gra -grum ⇒ activo, diligente</li>
+      <li>im-plēre -plēvisse -plētum ⇒ llenar</li>
+      <li>im-plicāre -uisse -itum ⇒ enredar, envolver</li>
+      <li>impluvium -ī n ⇒ impluvio (aljibe en el 'atrio')</li>
+      <li>im-pōnere -posuisse -positum ⇒ poner, colocar (en)</li>
+      <li>im-primere -pressisse -pressum ⇒ apretar,</li>
+      <li>apoyar sobre, imprimir</li>
+      <li>im-probus -a -um ⇒ malo, malvado</li>
+      <li>īmus -a -um sup ⇒ el más bajo, ínfimo</li>
+      <li>in prp + abl ⇒ en (dentro de), entre</li>
+      <li>prp + ac ⇒ a, hacia, en, hasta, contra</li>
+      <li>incendium -i n ⇒ incendio</li>
+      <li>in-certus -a -um ⇒ incierto</li>
+      <li>in-cipere -iō coepisse coeptum ⇒ empezar, comenzar</li>
+      <li>in-clūdere -clūsisse -clūsum ⇒ encerrar</li>
+      <li>incola -ae m/f ⇒ habitante</li>
+      <li>in-colere -coluisse -cultum ⇒ habitar, poblar</li>
+      <li>incolumis -e ⇒ incólume, sano y salvo</li>
+      <li>inconditus -a -um ⇒ confuso, desordenado</li>
+      <li>inde adv ⇒ de allí, desde entonces</li>
+      <li>index -icis m ⇒ lista, índice</li>
+      <li>in-dignus -a -um ⇒ indigno, vergonzoso</li>
+      <li>in-doctus -a -um ⇒ ignorante, indocto</li>
+      <li>induere -uisse -ūtum ⇒ ponerse, vestir</li>
+      <li>indūtus + abl ⇒ vestido (con)</li>
+      <li>industrius -a -um ⇒ activo, laborioso</li>
+      <li>in-ermis -e ⇒ inerme, desarmado</li>
+      <li>in-esse -fuisse ⇒ estar en, encontrarse en</li>
+      <li>in-exspectātus -a -um ⇒ inesperado</li>
+      <li>īnfāns -antis m/f ⇒ niño, niña, bebé</li>
+      <li>īn-fēlīx -īcis adj ⇒ desgraciado, infeliz</li>
+      <li>īnferior -ius comp ⇒ más bajo, inferior</li>
+      <li>īnferus -a -um ⇒ de abajo, inferior</li>
+      <li>Īnferī -ōrum m pl ⇒ los infiernos</li>
+      <li>īnfēstus -a -um ⇒ infestado, amenazado</li>
+      <li>īn-fīdus -a -um ⇒ infiel, desleal</li>
+      <li>īnfimus -a -um sup ⇒ el más bajo, ínfimo</li>
+      <li>īn-flectere -flexisse -flexum ⇒ doblar, declinar</li>
+      <li>īn-fluere -flūxisse -fluxum ⇒ desembocar</li>
+      <li>īnfrā prp + ac ⇒ debajo de, abajo</li>
+      <li>ingenium -ī n ⇒ naturaleza, carácter</li>
+      <li>ingēns -entis adj ⇒ ingente, enorme</li>
+      <li>in-hūmānus -a -um ⇒ inhumano</li>
+      <li>in-imīcus -ī m ⇒ enemigo (particular)</li>
+      <li>in-imīcus -a -um ⇒ enemigo, hostil</li>
+      <li>initium -ī n ⇒ principio, comienzo</li>
+      <li>iniūria -ae f ⇒ injusticia</li>
+      <li>in-iūstus -a -um ⇒ injusto</li>
+      <li>inopia -ae f ⇒ escasez, falta</li>
+      <li>inquit inquiunt, inquam ⇒ dice, dicen, digo</li>
+      <li>īn-scrībere -psisse -ptum ⇒ escribir sobre, inscribir, grabar</li>
+      <li>īnscrīptiō -ōnis f ⇒ inscripción</li>
+      <li>īn-struere -strūxisse -strūctum ⇒ colocar, alinear</li>
+      <li>īnstrūmentum -ī n ⇒ instrumento, utensilio</li>
+      <li>īnsula -ae f ⇒ isla</li>
+      <li>integer -gra -grum ⇒ intacto, entero</li>
+      <li>intellegere -lēxisse -lēctum ⇒ comprender</li>
+      <li>inter prp + ac ⇒ entre, durante</li>
+      <li>inter sē ⇒ uno a otro, entre sí, se</li>
+      <li>inter-dum adv ⇒ alguna vez, a veces</li>
+      <li>inter-eā adv ⇒ entretanto</li>
+      <li>inter-esse -fuisse ⇒ estar en medio de</li>
+      <li>inter-ficere -iō -fēcisse -fectum ⇒ matar</li>
+      <li>interim adv ⇒ entretanto</li>
+      <li>internus -a -um ⇒ interno</li>
+      <li>inter-pellāre [1] ⇒ interrumpir</li>
+      <li>inter-rogāre [1] ⇒ preguntar, interrogar</li>
+      <li>intrā prp + ac ⇒ dentro de</li>
+      <li>intrāre [1] ⇒ entrar (en)</li>
+      <li>intuērī intuitum esse dep ⇒ mirar, contemplar</li>
+      <li>intus adv ⇒ dentro</li>
+      <li>in-validus -a -um ⇒ inválido, débil</li>
+      <li>in-vehere -vēxisse -vectum ⇒ importar, transportar</li>
+      <li>in-venīre -vēnisse -ventum ⇒ encontrar, hallar</li>
+      <li>in-vidēre -vīdisse -vīsum + dat ⇒ envidiar</li>
+      <li>invidia -ae f ⇒ envidia</li>
+      <li>in-vocāre [1] ⇒ invocar</li>
+      <li>iocōsus -a -um ⇒ jocoso, festivo</li>
+      <li>ipse -a -um ⇒ mismo, en persona</li>
+      <li>īra -ae f ⇒ ira, cólera</li>
+      <li>īrātus -a -um ⇒ irritado, enojado</li>
+      <li>īre eō iisse itum ⇒ ir, marchar, pasar</li>
+      <li>is ea id ⇒ él, éste, este</li>
+      <li>iste -a -ud ⇒ ese</li>
+      <li>ita adv ⇒ así, de este modo</li>
+      <li>ita-que conj ⇒ por esto, por consiguiente</li>
+      <li>item adv ⇒ igualmente, asimismo</li>
+      <li>iter itineris n ⇒ viaje, marcha, vía</li>
+      <li>iterum adv ⇒ otra vez, de nuevo</li>
+      <li>iubēre iussisse iussum ⇒ mandar, ordenar</li>
+      <li>iūcundus -a -um ⇒ agradable</li>
+      <li>Iūlius -ī (mēnsis) ⇒ julio</li>
+      <li>iungere iūnxisse iūnctum ⇒ unir, juntar</li>
+      <li>Iūnius -ī (mēnsis) ⇒ junio</li>
+      <li>iūs iūris n ⇒ derecho, justicia</li>
+      <li>iūre adv ⇒ con derecho, con razón</li>
+      <li>iūstus -a -um ⇒ justo</li>
+      <li>iuvāre iūvisse iūtum ⇒ ayudar, complacer</li>
+      <li>iuvenis -is m ⇒ joven</li>
+      <li>iūxtā prp +ac ⇒ junto, cerca</li>
+      <li>kalendae -ārum f pl ⇒ Kalendas, día 1 del mes</li>
+      <li>kalendārium -ī n ⇒ calendario</li>
+      <li>lābī lāpsum esse dep ⇒ resbalar, caer, deslizarse</li>
+      <li>labor -ōris m ⇒ trabajo, fatiga</li>
+      <li>labōrāre [1] ⇒ trabajar, esforzarse</li>
+      <li>labrum -ī n ⇒ labio</li>
+      <li>labyrinthus -ī m ⇒ laberinto</li>
+      <li>lac lactis n ⇒ leche</li>
+      <li>lacertus -ī m ⇒ brazo, músculo del brazo</li>
+      <li>lacrima -ae f ⇒ lágrima</li>
+      <li>lacrimāre [1] ⇒ llorar</li>
+      <li>lacus -ūs m ⇒ lago</li>
+      <li>laedere -sisse -sum ⇒ herir, hacer daño</li>
+      <li>laetārī [1] dep ⇒ alegrarse</li>
+      <li>laetitia -ae f ⇒ alegría, gozo</li>
+      <li>laetus -a -um ⇒ contento, alegre</li>
+      <li>laevus -a -um ⇒ izquierdo</li>
+      <li>lāna -ae f ⇒ lana</li>
+      <li>largīrī -ītum esse dep ⇒ dar copiosamente</li>
+      <li>largus -a -um ⇒ liberal, generoso</li>
+      <li>latēre -uisse ⇒ estar escondido, ocultarse</li>
+      <li>Latīnus -a -um ⇒ latino</li>
+      <li>Latīnē adv ⇒ en latín</li>
+      <li>lātrāre [1] ⇒ ladrar</li>
+      <li>latus -eris n ⇒ costado, flanco, lado</li>
+      <li>lātus -a -um ⇒ ancho</li>
+      <li>laudāre [1] ⇒ loar, alabar, elogiar</li>
+      <li>laus laudis f ⇒ alabanza, elogio</li>
+      <li>lavāre lāvisse lautum ⇒ lavar, bañar</li>
+      <li>lectīca -ae f ⇒ litera, silla de manos</li>
+      <li>lectulus -ī m ⇒ cama, camastro</li>
+      <li>lectus -ī m ⇒ cama, lecho</li>
+      <li>lēgātus -ī m ⇒ embajador, legado</li>
+      <li>legere lēgisse lēctum ⇒ leer</li>
+      <li>legiō -ōnis f ⇒ legión</li>
+      <li>legiōnārius -a –um ⇒ legionario</li>
+      <li>leō -ōnis m ⇒ león</li>
+      <li>levāre [1] ⇒ alzar, levantar</li>
+      <li>levis -e ⇒ ligero, leve</li>
+      <li>lēx lēgis f ⇒ ley</li>
+      <li>libellus -ī m ⇒ libro</li>
+      <li>libenter adv ⇒ de buena gana</li>
+      <li>liber -brī m ⇒ libro</li>
+      <li>līber -era -erum ⇒ libre</li>
+      <li>līberāre [1] ⇒ liberar</li>
+      <li>libēre -uisse: libet + dat ⇒ placer, agradar, gustar</li>
+      <li>līberī -ōrum m pl ⇒ hijos</li>
+      <li>lībertās -ātis f ⇒ libertad</li>
+      <li>lībertīnus -ī m ⇒ liberto</li>
+      <li>licēre -uisse: licet + dat ⇒ estar permitido</li>
+      <li>ligneus -a -um ⇒ de madera</li>
+      <li>lignum -ī n ⇒ madera</li>
+      <li>līlium -ī n ⇒ lirio</li>
+      <li>līmen -inis n ⇒ umbral, entrada</li>
+      <li>līnea -ae f ⇒ cuerda, cordel, línea</li>
+      <li>lingua -ae f ⇒ lengua, lenguaje</li>
+      <li>littera -ae f ⇒ letra</li>
+      <li>lītus -oris n ⇒ litoral, playa, costa</li>
+      <li>locus -ī m, pl -ī (m) /-a (n) ⇒ lugar, sitio</li>
+      <li>longē adv ⇒ lejos, con mucho</li>
+      <li>longus -a -um ⇒ largo</li>
+      <li>loquī locūtum esse dep ⇒ hablar</li>
+      <li>lūcēre lūxisse ⇒ brillar</li>
+      <li>lucerna -ae f ⇒ lámpara</li>
+      <li>lucrum -ī n ⇒ ganancia, lucro</li>
+      <li>luctārī [1] dep ⇒ luchar</li>
+      <li>lūdere lūsisse lūsum ⇒ jugar</li>
+      <li>lūdus -ī m ⇒ juego, escuela</li>
+      <li>lūdī magister ⇒ maestro de escuela</li>
+      <li>lūgēre lūxisse lūctum ⇒ afligirse, estar de luto</li>
+      <li>lūna -ae f ⇒ luna</li>
+      <li>lupus -ī m ⇒ lobo</li>
+      <li>lūx lūcis f ⇒ luz, día</li>
+      <li>maerēre -- -- ⇒ estar triste, afligirse</li>
+      <li>maestus -a -um ⇒ triste, afligido</li>
+      <li>magis adv ⇒ más</li>
+      <li>magister -trī m ⇒ maestro</li>
+      <li>magnificus -a -um ⇒ magnífico, espléndido</li>
+      <li>magnus -a -um ⇒ grande</li>
+      <li>māior -ius comp ⇒ mayor, más grande</li>
+      <li>Māius -ī (mēnsis) ⇒ mayo</li>
+      <li>male adv ⇒ mal</li>
+      <li>maleficium -ī n ⇒ mala acción, crimen</li>
+      <li>mālle mālō māluisse ⇒ querer más, preferir</li>
+      <li>malum -ī n ⇒ mal, calamidad</li>
+      <li>mālum -ī n ⇒ manzana</li>
+      <li>malus -a -um ⇒ malo, malvado</li>
+      <li>mamma -ae f ⇒ mamá</li>
+      <li>māne indecl n ⇒ (la) mañana</li>
+      <li>māne adv ⇒ por la mañana</li>
+      <li>manēre mānsisse mānsum ⇒ permanecer, quedar(se)</li>
+      <li>manus -ūs f ⇒ mano</li>
+      <li>mare -is n ⇒ mar</li>
+      <li>margarīta -ae f ⇒ perla</li>
+      <li>maritimus -a -um ⇒ de mar, marítimo</li>
+      <li>marītus -ī m ⇒ marido, esposo</li>
+      <li>Mārtius -ī (mēnsis) ⇒ marzo</li>
+      <li>māter -tris f ⇒ madre</li>
+      <li>māteria -ae f ⇒ materia</li>
+      <li>mātrōna -ae f ⇒ matrona</li>
+      <li>mātūrus -a -um ⇒ maduro</li>
+      <li>māximē adv ⇒ sobre todo</li>
+      <li>māximus -a -um ⇒ el mayor, el más grande</li>
+      <li>medicus -ī m ⇒ médico</li>
+      <li>medium -ī n ⇒ medio, centro</li>
+      <li>medius -a -um ⇒ del medio, central</li>
+      <li>mel mellis n ⇒ miel</li>
+      <li>melior -ius comp ⇒ mejor</li>
+      <li>mellītus -a -um ⇒ dulce, de miel</li>
+      <li>membrum -ī n ⇒ miembro</li>
+      <li>meminisse + gen/ac ⇒ recordar, acordarse</li>
+      <li>memorāre [1] ⇒ mencionar</li>
+      <li>memoria -ae f ⇒ memoria, recuerdo</li>
+      <li>mendum -ī n ⇒ error</li>
+      <li>mēns mentis f ⇒ mente, espíritu</li>
+      <li>mēnsa -ae f ⇒ mesa</li>
+      <li>mēnsa secunda ⇒ postre</li>
+      <li>mēnsis -is m ⇒ mes</li>
+      <li>mentiō -ōnis f ⇒ mención</li>
+      <li>mentīrī -ītum esse dep ⇒ mentir</li>
+      <li>mercātor -ōris m ⇒ mercader, comerciante</li>
+      <li>mercātōrius -a -um ⇒ mercante</li>
+      <li>mercēs -ēdis f ⇒ salario, alquiler</li>
+      <li>merēre meruisse meritum ⇒ ganar, merecer</li>
+      <li>mergere -sisse -sum ⇒ hundir, sumergir, anegar</li>
+      <li>merīdiēs -ēī m ⇒ mediodía, sur</li>
+      <li>merum -ī n ⇒ vino puro</li>
+      <li>merus -a -um ⇒ puro, sin mezcla</li>
+      <li>merx -rcis f ⇒ mercancia</li>
+      <li>metere messum ⇒ recolectar, cosechar</li>
+      <li>metuere -uisse mētutum ⇒ temer, tener miedo</li>
+      <li>metus -ūs m ⇒ miedo, temor</li>
+      <li>meus -a -um, voc mī ⇒ mi, mío</li>
+      <li>mīles -itis m ⇒ soldado</li>
+      <li>mīlitāre [1] ⇒ ser soldado, hacer el servicio militar, enrolarse</li>
+      <li>mīlitāris -e ⇒ militar</li>
+      <li>mīlle, pl mīlia -ium n ⇒ mil</li>
+      <li>mīlle passuum ⇒ milla (= 1.480 m.)</li>
+      <li>minārī [1] dep + dat ⇒ amenazar</li>
+      <li>minimē adv ⇒ de ningún modo</li>
+      <li>minimus -a -um sup ⇒ el más pequeño, mínimo</li>
+      <li>minister -trī m ⇒ servidor, criado</li>
+      <li>minor -us (-oris) comp ⇒ más pequeño, menor</li>
+      <li>minuere -uisse -ūtum ⇒ disminuir, reducir</li>
+      <li>minus adv ⇒ menos</li>
+      <li>mīrābilis -e ⇒ maravilloso</li>
+      <li>mīrārī [1] dep ⇒ extrañarse (de)</li>
+      <li>mīrus -a -um ⇒ asombroso, sorprendente</li>
+      <li>miscēre -uisse mixtum ⇒ mezclar</li>
+      <li>misellus -a -um ⇒ pobre, pobrecillo</li>
+      <li>miser -era -erum ⇒ mísero, miserable</li>
+      <li>mittere mīsisse missum ⇒ enviar, echar</li>
+      <li>sanguinem mittere ⇒ sangrar</li>
+      <li>modo adv ⇒ sólo, hace poco</li>
+      <li>modo... modo ⇒ ora... ora</li>
+      <li>modus -ī m ⇒ modo, manera</li>
+      <li>nūllō modō ⇒ de ningún modo</li>
+      <li>moenia -ium n pl ⇒ murallas</li>
+      <li>molestus -a -um ⇒ molesto, desagradable</li>
+      <li>mollīre -īsse –ītum ⇒ ablandar, reblandecer</li>
+      <li>mollis -e ⇒ blando, tierno</li>
+      <li>monēre monuisse monitum ⇒ advertir, recordar, aconsejar</li>
+      <li>mōns montis m ⇒ monte, montaña</li>
+      <li>mōnstrāre [1] ⇒ indicar, señalar</li>
+      <li>mōnstrum -ī n ⇒ monstruo, prodigio</li>
+      <li>mora -ae f ⇒ tardanza, demora</li>
+      <li>mordēre momordisse morsum ⇒ morder</li>
+      <li>morī -ior mortuum esse dep ⇒ morir</li>
+      <li>mors mortis f ⇒ muerte</li>
+      <li>mortālis -e ⇒ mortal</li>
+      <li>mortuus -a -um (< morī) ⇒ muerto</li>
+      <li>mōs mōris m ⇒ costumbre</li>
+      <li>movēre mōvisse mōtum ⇒ mover</li>
+      <li>mox adv ⇒ pronto, luego</li>
+      <li>mulier -eris f ⇒ mujer</li>
+      <li>multī -ae -a ⇒ muchos</li>
+      <li>multitūdō -inis f ⇒ multitud, gran número</li>
+      <li>multō + comp ⇒ mucho, muy</li>
+      <li>multum adv ⇒ mucho</li>
+      <li>mundus -ī m ⇒ mundo, universo</li>
+      <li>mundus -a -um ⇒ limpio, nítido</li>
+      <li>mūnīre -īsse -ītum ⇒ fortificar</li>
+      <li>mūnus -eris n ⇒ regalo</li>
+      <li>mūrus -ī m ⇒ muralla, muro</li>
+      <li>Mūsa -ae f ⇒ Musa</li>
+      <li>mūtāre [1] ⇒ cambiar, intercambiar</li>
+      <li>mūtus -a -um ⇒ mudo</li>
+      <li>mūtuus -a -um ⇒ prestado; mūtuum</li>
+      <li>dare/sūmere ⇒ prestar/tomar prestado</li>
+      <li>nam conj ⇒ pues, porque</li>
+      <li>-nam ⇒ ¿... pues?</li>
+      <li>namque conj ⇒ pues, porque</li>
+      <li>nārrāre [1] ⇒ narrar, contar</li>
+      <li>nārrātiō -ōnis f ⇒ narración</li>
+      <li>nāscī nātum esse dep ⇒ nacer</li>
+      <li>nāsus -ī m ⇒ nariz</li>
+      <li>natāre [1] ⇒ nadar</li>
+      <li>nātūra -ae f ⇒ naturaleza</li>
+      <li>nātus -a -um (< nāscī) ⇒ nacido</li>
+      <li>XX annōs nātus ⇒ de 20 años de edad</li>
+      <li>nauta -ae m ⇒ marinero</li>
+      <li>nāvicula -ae f ⇒ barca, bote</li>
+      <li>nāvigāre [1] ⇒ navegar</li>
+      <li>nāvigātiō -ōnis f ⇒ navegación</li>
+      <li>nāvis -is f ⇒ nave, embarcación</li>
+      <li>-ne adv ⇒ ¿...?, si (interrogativo)</li>
+      <li>nē conj ⇒ para que no, que no</li>
+      <li>nē... quidem ⇒ ni siquiera, tampoco</li>
+      <li>nec v. ne-que/nec</li>
+      <li>necāre [1] ⇒ matar</li>
+      <li>necessārius -a -um ⇒ necesario</li>
+      <li>necesse est ⇒ es necesario, hay que</li>
+      <li>negāre [1] ⇒ negar, decir que no</li>
+      <li>neglegēns -entis adj ⇒ negligente, descuidado</li>
+      <li>neglegere -ēxisse -ēctum ⇒ descuidar</li>
+      <li>negōtium -ī n ⇒ actividad, negocio</li>
+      <li>nēmō nēminem nēminī ⇒ nadie, ningún</li>
+      <li>nēquam adj indecl, sup nēquissimus ⇒ que nada vale, inútil, sin valor</li>
+      <li>ne-que/nec conj ⇒ y no, ni</li>
+      <li>neque... neque ⇒ ni... ni</li>
+      <li>ne-scīre -scī(v)i -scītum ⇒ no saber, desconocer</li>
+      <li>neu v. nē-ve/neu</li>
+      <li>neuter -tra -trum ⇒ ninguno de los dos</li>
+      <li>nē-ve / neu conj ⇒ y no, o no</li>
+      <li>nex necis f ⇒ muerte violenta, matanza</li>
+      <li>nīdus -ī m ⇒ nido</li>
+      <li>niger -gra -grum ⇒ negro</li>
+      <li>nihil/nīl indecl ⇒ nada</li>
+      <li>nimis adv ⇒ demasiado</li>
+      <li>nimium adv ⇒ demasiado</li>
+      <li>nimius -a -um ⇒ demasiado grande</li>
+      <li>nisi conj ⇒ si no, excepto, a no ser</li>
+      <li>niveus -a -um ⇒ níveo, blanco como nieve</li>
+      <li>nix nivis f ⇒ nieve</li>
+      <li>nōbilis -e ⇒ conocido, célebre, famoso</li>
+      <li>nocēre -uisse -itum + dat ⇒ dañar, ser nocivo</li>
+      <li>nōlle nōlō nōluisse ⇒ no querer</li>
+      <li>nōlī -īte + īnf ⇒ ¡no ...! (mandato negativo)</li>
+      <li>nōmen -inis n ⇒ nombre (apellido)</li>
+      <li>nōmināre [1] ⇒ nombrar, llamar</li>
+      <li>nōn adv ⇒ no</li>
+      <li>nōnae -ārum f pl ⇒ Nonas, el 5 (o 7) del mes</li>
+      <li>nōnāgēsimus -a -um ⇒ nonagésimo</li>
+      <li>nōnāgintā ⇒ noventa</li>
+      <li>nōn-dum adv ⇒ aún no, todavía no</li>
+      <li>nōn-gentī -ae -a ⇒ novecientos</li>
+      <li>nōn-ne adv ⇒ ¿(acaso) no...?</li>
+      <li>nōn-nūllī -ae -a ⇒ algunos</li>
+      <li>nōn-numquam adv ⇒ alguna vez, a veces</li>
+      <li>nōnus -a -um ⇒ nono, noveno</li>
+      <li>nōs nōbīs ⇒ nosotros, nos</li>
+      <li>nōscere nōvisse nōtum ⇒ conocer, saber</li>
+      <li>noster -tra -trum ⇒ nuestro</li>
+      <li>nostrum gen ⇒ de nosotros</li>
+      <li>nota -ae f ⇒ señal, signo</li>
+      <li>nōtus -a -um ⇒ conocido</li>
+      <li>novem ⇒ nueve</li>
+      <li>November -bris (mēnsis) ⇒ noviembre</li>
+      <li>nōvisse (< nōscere) ⇒ conocer</li>
+      <li>novus -a -um ⇒ nuevo</li>
+      <li>nox noctis f ⇒ noche</li>
+      <li>nūbere nūpsisse nuptum + dat ⇒ casarse (una mujer con un hombre)</li>
+      <li>nūbēs -is f ⇒ nube</li>
+      <li>nūbilus -a -um ⇒ nuboso</li>
+      <li>nūdus -a -um ⇒ desnudo</li>
+      <li>nūgae -ārum f pl ⇒ simplezas, niñerías</li>
+      <li>nūllus -a -um ⇒ ninguno</li>
+      <li>num adv ⇒ ¿(acaso) ...?; si (interrogativo)</li>
+      <li>numerāre [1] ⇒ contar</li>
+      <li>numerus -ī m ⇒ número</li>
+      <li>nummus -ī m ⇒ moneda, sestercio</li>
+      <li>numquam adv ⇒ nunca</li>
+      <li>nunc adv ⇒ ahora</li>
+      <li>nūntiāre [1] ⇒ anunciar, dar a conocer</li>
+      <li>nūntius -ī m ⇒ mensajero, mensaje</li>
+      <li>nūper adv ⇒ hace poco</li>
+      <li>nūtrīx -īcis f ⇒ nodriza, ama de cría</li>
+      <li>nux nucis f ⇒ nuez</li>
+      <li>ō ⇒ ¡oh!</li>
+      <li>ob prp + ac ⇒ por, a causa de</li>
+      <li>oblīvīscī oblītum esse dep + gen/ac ⇒ olvidar(se)</li>
+      <li>ob-oedīre -īsse -ītum + dat ⇒ obedecer</li>
+      <li>obscūrus -a -um ⇒ oscuro</li>
+      <li>occidēns -entis m ⇒ occidente, oeste</li>
+      <li>oc-cidere -cidisse -cāsum ⇒ ponerse (el sol), morir</li>
+      <li>oc-cīdere -cīdisse -cīsum ⇒ matar, asesinar</li>
+      <li>occultāre [1] ⇒ ocultar, esconder</li>
+      <li>oc-currere -currisse -cursum + dat ⇒ encontrarse con, acudir, presentarse</li>
+      <li>ōceanus -ī m ⇒ océano</li>
+      <li>ocellus -ī m ⇒ ojito, ojo pequeño</li>
+      <li>octāvus -a -um ⇒ octavo</li>
+      <li>octin-gentī -ae -a ⇒ ochocientos</li>
+      <li>octō ⇒ ocho</li>
+      <li>Octōber -bris (mēnsis) ⇒ octubre</li>
+      <li>octōgintā ⇒ ochenta</li>
+      <li>oculus -ī m ⇒ ojo</li>
+      <li>ōdisse def ⇒ odiar</li>
+      <li>odium -ī n ⇒ odio</li>
+      <li>of-ferre ob-tulisse ob-lātum ⇒ ofrecer</li>
+      <li>officium -ī n ⇒ deber, obligación</li>
+      <li>ōlim adv ⇒ en otro tiempo, una vez</li>
+      <li>omnis -e ⇒ todo, cada; pl todos (sust.)</li>
+      <li>omnia n pl ⇒ todo</li>
+      <li>opera -ae f ⇒ trabajo, cuidado</li>
+      <li>operīre -uisse opertum ⇒ cubrir</li>
+      <li>opēs -um f pl ⇒ medios, riquezas</li>
+      <li>oportēre -uisse: oportet ⇒ conviene, es necesario</li>
+      <li>opperīrī oppertum esse dep ⇒ esperar, aguardar</li>
+      <li>oppidum -ī n ⇒ ciudad</li>
+      <li>op-pugnāre [1] ⇒ atacar</li>
+      <li>optāre [1] ⇒ desear</li>
+      <li>optimus -a -um sup ⇒ el mejor, óptimo</li>
+      <li>opus -eris n ⇒ trabajo, obra</li>
+      <li>opus est ⇒ es necesario</li>
+      <li>ōra -ae f ⇒ borde, costa</li>
+      <li>ōrāre [1] ⇒ rogar, suplicar, hablar</li>
+      <li>ōrātiō -ōnis f ⇒ discurso, oración (gramat.)</li>
+      <li>orbis -is m ⇒ círculo, órbita</li>
+      <li>orbis terrārum ⇒ la tierra, el mundo</li>
+      <li>ōrdināre [1] ⇒ ordenar, regular</li>
+      <li>ōrdō -inis m ⇒ orden, fila</li>
+      <li>oriēns -entis m ⇒ oriente, este</li>
+      <li>orīrī ortum esse dep ⇒ levantarse, salir, nacer</li>
+      <li>ōrnāmentum -ī n ⇒ joya, adorno</li>
+      <li>ōrnāre [1] ⇒ equipar, adornar</li>
+      <li>os ossis n ⇒ hueso</li>
+      <li>ōs ōris n ⇒ boca</li>
+      <li>ōscitāre [1] ⇒ bostezar</li>
+      <li>ōsculārī [1] dep ⇒ besar</li>
+      <li>ōsculum -ī n ⇒ beso</li>
+      <li>ostendere ostendisse ostentum ⇒ mostrar, presentar</li>
+      <li>ōstiārius -ī m ⇒ portero</li>
+      <li>ōstium -ī n ⇒ puerta, entrada</li>
+      <li>ōtiōsus -a -um ⇒ desocupado, ocioso</li>
+      <li>ōtium -ī n ⇒ tiempo libre, ocio</li>
+      <li>ovis -is f ⇒ oveja</li>
+      <li>ōvum -ī n ⇒ huevo</li>
+      <li>pābulum -ī n ⇒ pasto, forraje</li>
+      <li>paene adv ⇒ casi</li>
+      <li>paen-īnsula -ae f ⇒ península</li>
+      <li>pāgina -ae f ⇒ página</li>
+      <li>pallēre -uisse ⇒ estar pálido, palidecer</li>
+      <li>pallidus -a -um ⇒ pálido</li>
+      <li>pallium -ī n ⇒ manto</li>
+      <li>palma -ae f ⇒ palma (de la mano)</li>
+      <li>palpitāre [1] ⇒ palpitar, latir</li>
+      <li>pānis -is m ⇒ pan</li>
+      <li>papyrus -ī f ⇒ papiro</li>
+      <li>pār paris adj ⇒ igual</li>
+      <li>parāre [1] ⇒ preparar, disponerse a</li>
+      <li>parātus -a -um ⇒ pronto, dispuesto</li>
+      <li>parcere pepercisse + dat ⇒ perdonar</li>
+      <li>parentēs -um m pl ⇒ padres (padre y madre)</li>
+      <li>parere -iō peperisse partum ⇒ dar a luz,</li>
+      <li>parir, poner (un huevo)</li>
+      <li>pārēre -uisse pāritum + dat ⇒ obedecer</li>
+      <li>parricīda -ae m ⇒ parricida</li>
+      <li>pars -rtis f ⇒ parte, dirección</li>
+      <li>particula -ae f ⇒ partícula</li>
+      <li>partīrī -ītum esse dep ⇒ dividir, repartir</li>
+      <li>parum adv ⇒ poco, no bastante, apenas</li>
+      <li>parvulus -a -um ⇒ muy pequeño, párvulo</li>
+      <li>parvus -a -um ⇒ pequeño</li>
+      <li>pāscere pāvisse pāstum ⇒ apacentar, satisfacer</li>
+      <li>passer -eris m ⇒ gorrión</li>
+      <li>passus -ūs m ⇒ paso (medida = 1,48 m.)</li>
+      <li>pāstor -ōris m ⇒ pastor</li>
+      <li>pater -tris m ⇒ padre</li>
+      <li>patēre patuisse ⇒ estar abierto</li>
+      <li>patī -ior passum esse dep ⇒ sufrir, soportar</li>
+      <li>patiēns -entis adj ⇒ paciente</li>
+      <li>patientia -ae f ⇒ paciencia</li>
+      <li>patria -ae f ⇒ patria, país natal</li>
+      <li>paucī -ae -a ⇒ pocos</li>
+      <li>paulisper adv ⇒ poco tiempo, un momento</li>
+      <li>paulō + comp ⇒ poco, un poco</li>
+      <li>paulō ante/post ⇒ poco antes / después</li>
+      <li>paulum adv ⇒ poco, un poco</li>
+      <li>pauper -eris adj ⇒ pobre</li>
+      <li>pāx pācis f ⇒ paz</li>
+      <li>pectus -oris n ⇒ pecho</li>
+      <li>pecūlium -ī n ⇒ propiedades, bienes, ahorros</li>
+      <li>pecūnia -ae f ⇒ dinero</li>
+      <li>pecūniōsus -a -um ⇒ rico, adinerado</li>
+      <li>pecus -oris n ⇒ ganado, rebaño</li>
+      <li>pedes -itis m ⇒ soldado de infantería</li>
+      <li>pēior -ius comp ⇒ peor</li>
+      <li>pellere pepulisse pulsum ⇒ rechazar, expulsar</li>
+      <li>penna -ae f ⇒ pluma</li>
+      <li>pēnsum -ī n ⇒ tarea, obligación</li>
+      <li>per prp + ac ⇒ a través, por</li>
+      <li>per sē ⇒ por sí mismo, solo</li>
+      <li>per-currere -currisse -cursum ⇒ recorrer, atravesar (corriendo), correr</li>
+      <li>per-cutere -iō -cussisse -cussum ⇒ golpear, batir</li>
+      <li>per-dere -didisse -ditum ⇒ perder, arruinar, gastar</li>
+      <li>per-ferre -tulisse -lātum ⇒ soportar</li>
+      <li>per-ficere -fēcisse -fectum ⇒ acabar, terminar</li>
+      <li>pergere per-rēxisse per-rēctum ⇒ continuar, proseguir</li>
+      <li>perīculōsus -a -um ⇒ peligroso</li>
+      <li>perīculum -ī n ⇒ peligro</li>
+      <li>per-īre -eō -iisse ⇒ perecer, perderse</li>
+      <li>peristylum -ī n ⇒ peristilo (jardín interior)</li>
+      <li>per-mittere -mīsisse -missum ⇒ permitir</li>
+      <li>per-movēre -mōvisse -mōtum ⇒ agitar, conmover</li>
+      <li>perpetuus -a -um ⇒ constante, perpetuo</li>
+      <li>per-sequī -secūtum esse dep ⇒ perseguir</li>
+      <li>persōna -ae f ⇒ personaje, persona</li>
+      <li>per-suādēre -suāsisse -suāsum + dat ⇒ persuadir, convencer</li>
+      <li>per-territus -a -um ⇒ aterrado, espantado</li>
+      <li>per-turbāre [1] ⇒ perturbar, desconcertar</li>
+      <li>per-venīre -vēnisse -ventum ⇒ arribar, llegar</li>
+      <li>pēs pedis m ⇒ pie (medida = 30 cm.)</li>
+      <li>pessimus -a -um sup ⇒ el peor, pésimo</li>
+      <li>petasus -ī m ⇒ petaso, sombrero</li>
+      <li>petere -īvisse -ītum ⇒ dirigirse a, atacar, buscar, pedir</li>
+      <li>phantasma -atis n ⇒ fantasma, espectro</li>
+      <li>philosophus -ī m ⇒ filósofo</li>
+      <li>piger -gra -grum ⇒ perezoso</li>
+      <li>pila -ae f ⇒ pelota</li>
+      <li>pīlum -ī n ⇒ venablo, dardo</li>
+      <li>pīpiāre [1] ⇒ piar, pipiar</li>
+      <li>pīrāta -ae m ⇒ pirata</li>
+      <li>pirum -ī n ⇒ pera</li>
+      <li>piscātor -ōris m ⇒ pescador</li>
+      <li>piscis -is m ⇒ pez</li>
+      <li>placēre -uisse -itum + dat ⇒ dar placer, agradar, deleitar</li>
+      <li>plānē adv ⇒ claramente, enteramente</li>
+      <li>plānus -a -um ⇒ claro, evidente</li>
+      <li>plaudere -sisse -sum + dat ⇒ aplaudir</li>
+      <li>plēnus -a -um + gen/abl ⇒ lleno</li>
+      <li>plērī-que plērae- plēra- ⇒ la mayor parte, los más</li>
+      <li>plērumque adv ⇒ casi siempre, generalmente</li>
+      <li>plōrāre [1] ⇒ llorar</li>
+      <li>plūrēs -a comp ⇒ más, más numerosos</li>
+      <li>plūrimī -ae -a sup ⇒ el mayor número</li>
+      <li>plūs plūris n comp ⇒ más, en mayor cantidad</li>
+      <li>plūs adv ⇒ más</li>
+      <li>pōculum -ī n ⇒ copa</li>
+      <li>poena -ae f ⇒ castigo, pena</li>
+      <li>poēta -ae m/f ⇒ poeta</li>
+      <li>poēticus -a -um ⇒ poético</li>
+      <li>pollicērī -itum esse dep ⇒ prometer</li>
+      <li>pōnere posuisse positum ⇒ poner, colocar</li>
+      <li>pōns pontis m ⇒ puente</li>
+      <li>populus -ī m ⇒ pueblo</li>
+      <li>porcus -ī m ⇒ puerco, cochino</li>
+      <li>porta -ae f ⇒ puerta (de ciudad)</li>
+      <li>portāre [1] ⇒ llevar</li>
+      <li>portus -ūs m ⇒ puerto</li>
+      <li>poscere poposcisse ⇒ pedir, reclamar</li>
+      <li>posse possum potuisse ⇒ poder, ser capaz de</li>
+      <li>possidēre -sēdisse -sessum ⇒ poseer</li>
+      <li>post prp + ac ⇒ detrás de, después de</li>
+      <li>post adv ⇒ detrás, después, luego</li>
+      <li>post-eā adv ⇒ en seguida, después</li>
+      <li>posterior -ius comp ⇒ posterior, trasero</li>
+      <li>posterus -a -um ⇒ siguiente</li>
+      <li>posthāc adv ⇒ en adelante</li>
+      <li>post-quam conj ⇒ después que, desde que</li>
+      <li>postrēmō adv ⇒ en fin, finalmente</li>
+      <li>postrēmus -a -um ⇒ último</li>
+      <li>postulāre [1] ⇒ pedir, demandar</li>
+      <li>pōtāre [1] ⇒ beber</li>
+      <li>potestās -ātis f ⇒ poder, potestad</li>
+      <li>pōtiō -ōnis f ⇒ bebida</li>
+      <li>potius adv ⇒ más bien</li>
+      <li>prae prp +abl ⇒ delante de, por</li>
+      <li>praecipuē adv ⇒ principalmente</li>
+      <li>praedium -ī n ⇒ predio, hacienda</li>
+      <li>praedō -ōnis m ⇒ ladrón, pirata</li>
+      <li>prae-esse -fuisse + dat ⇒ estar delante de, estar al frente de</li>
+      <li>prae-ferre -tulisse -lātum ⇒ preferir</li>
+      <li>praemium -ī n ⇒ recompensa, premio</li>
+      <li>prae-nōmen -inis n ⇒ nombre (de pila)</li>
+      <li>prae-pōnere -posuisse -positum + dat ⇒ poner al frente de, anteponer</li>
+      <li>praesēns -entis adj ⇒ presente</li>
+      <li>prae-stāre -stitisse -stitum ⇒ prestar, cumplir</li>
+      <li>praeter prp + ac ⇒ por delante de, excepto</li>
+      <li>praeter-eā adv ⇒ además</li>
+      <li>praeteritus -a -um ⇒ pasado</li>
+      <li>prāvus -a -um ⇒ falso, malo</li>
+      <li>precārī [1] dep ⇒ rogar, suplicar</li>
+      <li>precēs -um f pl ⇒ súplicas</li>
+      <li>prehendere -hendisse -hēnsum ⇒ coger</li>
+      <li>premere pressisse pressum ⇒ apretar</li>
+      <li>pretiōsus -a -um ⇒ valioso, de gran valor</li>
+      <li>pretium -ī n ⇒ precio, valor</li>
+      <li>prīdem adv ⇒ hace mucho tiempo</li>
+      <li>prī-diē adv ⇒ el día antes</li>
+      <li>prīmō adv ⇒ al principio</li>
+      <li>prīmum adv ⇒ primeramente</li>
+      <li>prīmus -a -um ⇒ primero</li>
+      <li>in prīmīs ⇒ principalmente</li>
+      <li>prīnceps -ipis m ⇒ el primero, jefe</li>
+      <li>prīncipium -ī n ⇒ comienzo, principio</li>
+      <li>prior -ius ⇒ anterior, primero</li>
+      <li>prius adv ⇒ antes</li>
+      <li>prius-quam conj ⇒ antes que, antes de</li>
+      <li>prīvātus -a -um ⇒ privado, particular</li>
+      <li>prō prp + abl ⇒ por, en lugar de, en favor de, delante de</li>
+      <li>probus -a -um ⇒ bueno, probo</li>
+      <li>prō-cēdere -cessisse -cessum ⇒ adelantarse, avanzar</li>
+      <li>procul adv ⇒ lejos</li>
+      <li>prō-currere -currisse -cursum ⇒ avanzar corriendo</li>
+      <li>prōd-esse prō-sum prō-fuisse + dat ⇒ aprovechar, ser útil, servir a</li>
+      <li>proelium -ī n ⇒ batalla, combate</li>
+      <li>profectō adv ⇒ ciertamente</li>
+      <li>prō-ferre -tulisse -lātum ⇒ sacar, producir</li>
+      <li>proficīscī -fectum esse dep ⇒ partir, marcharse</li>
+      <li>prō-gredī -ior -gressum esse dep ⇒ avanzar</li>
+      <li>pro-hibēre -uisse -itum ⇒ alejar, impedir</li>
+      <li>prō-icere -iēcisse -iectum ⇒ arrojar</li>
+      <li>prōmere prōmpsisse prōmptum ⇒ sacar</li>
+      <li>prōmissum -ī n ⇒ promesa</li>
+      <li>prō-mittere -mīsisse -mīssum ⇒ prometer</li>
+      <li>prope prp + ac ⇒ cerca de</li>
+      <li>prope adv ⇒ casi, cerca</li>
+      <li>properāre [1] ⇒ apresurarse</li>
+      <li>propinquus -a -um ⇒ cercano</li>
+      <li>proprius -a -um ⇒ propio</li>
+      <li>propter prp + ac ⇒ por, por causa de</li>
+      <li>propter-eā adv ⇒ por esto, por esta razón</li>
+      <li>prō-silīre -uisse ⇒ saltar fuera</li>
+      <li>prō-spicere -spexisse -spectum ⇒ mirar adelante, ver a lo lejos, observar</li>
+      <li>prōtinus adv ⇒ en seguida, al momento</li>
+      <li>prōvincia -ae f ⇒ provincia</li>
+      <li>proximus -a -um sup ⇒ el más cercano, próximo</li>
+      <li>prūdēns -entis adj ⇒ prudente, sagaz</li>
+      <li>pūblicus -a -um ⇒ público, del Estado</li>
+      <li>pudēre: pudet mē + gen ⇒ me avergüenzo (de)</li>
+      <li>pudor -ōris m ⇒ vergüenza</li>
+      <li>puella -ae f ⇒ muchacha, niña</li>
+      <li>puer -erī m ⇒ muchacho, niño</li>
+      <li>pugna -ae f ⇒ pelea, combate</li>
+      <li>pugnāre [1] ⇒ combatir, luchar, pelear</li>
+      <li>pugnus -ī m ⇒ puño</li>
+      <li>pulcher -chra -chrum ⇒ bello, hermoso</li>
+      <li>pulchritūdō -inis f ⇒ belleza</li>
+      <li>pullus -ī m ⇒ pollo, cachorro, cría</li>
+      <li>pulmō -ōnis m ⇒ pulmón</li>
+      <li>pulsāre [1] ⇒ golpear, empujar</li>
+      <li>pūnīre -īvisse -ītum ⇒ castigar</li>
+      <li>puppis -is f ⇒ popa</li>
+      <li>pūrus -a -um ⇒ limpio, puro</li>
+      <li>putāre [1] ⇒ pensar, creer, considerar</li>
+      <li>quadrāgēsimus -a -um ⇒ cuadragésimo</li>
+      <li>quadrāgintā ⇒ cuarenta</li>
+      <li>quadrin-gentī -ae -a ⇒ cuatrocientos</li>
+      <li>quaerere quaesīvisse quaesītum ⇒ buscar, pedir preguntar</li>
+      <li>quālis -e ⇒ ¿cuál?, ¿de qué modo?</li>
+      <li>quālitās -ātis f ⇒ cualidad</li>
+      <li>quam ⇒ que, como, cuán</li>
+      <li>quam + sup ⇒ lo más ... posible</li>
+      <li>quam-diū adv ⇒ ¿cuánto tiempo?, como</li>
+      <li>quam-ob-rem adv ⇒ ¿por qué?</li>
+      <li>quamquam conj ⇒ aunque</li>
+      <li>quandō adv ⇒ ¿cuándo?</li>
+      <li>quandō conj ⇒ cuando, ya que</li>
+      <li>quantitās -ātis f ⇒ cantidad</li>
+      <li>quantum -ī n ⇒ cuánto, cuanto, como</li>
+      <li>quantus -a -um ⇒ cuán grande, cuanto,como</li>
+      <li>quā-propter adv ⇒ ¿por qué?</li>
+      <li>quā-rē adv ⇒ ¿por qué?</li>
+      <li>quārtus -a -um ⇒ cuarto</li>
+      <li>quasi adv ⇒ como, como si</li>
+      <li>quater adv ⇒ cuatro veces</li>
+      <li>quatere -iō -- quassum ⇒ agitar, sacudir</li>
+      <li>quaternī -ae -a ⇒ cuatro (cada uno)</li>
+      <li>quattuor ⇒ cuatro</li>
+      <li>quattuor-decim ⇒ catorce</li>
+      <li>-que conj ⇒ y</li>
+      <li>querī questum esse dep ⇒ quejarse, lamentarse</li>
+      <li>quī quae quod ⇒ que, el que</li>
+      <li>quī quae quod (...?) ⇒ ¿qué...?</li>
+      <li>quia conj ⇒ porque</li>
+      <li>quid n (v. quis) ⇒ ¿qué?, algo</li>
+      <li>quid adv ⇒ ¿por qué?</li>
+      <li>quī-dam quae- quod- ⇒ un cierto, un tal, uno</li>
+      <li>quidem adv ⇒ sin duda, por lo menos</li>
+      <li>nē quidem ⇒ ni siquiera</li>
+      <li>quidnī adv ⇒ ¿por qué no?</li>
+      <li>quid-quam ⇒ algo</li>
+      <li>neque/nec quidquam ⇒ y nada</li>
+      <li>quid-quid ⇒ cualquier cosa que</li>
+      <li>quiēscere -ēvisse -ētum ⇒ descansar, reposar</li>
+      <li>quiētus -a -um ⇒ quieto, tranquilo, en calma</li>
+      <li>quīn ⇒ ¿por qué no?</li>
+      <li>quīn-decim ⇒ quince</li>
+      <li>quīn-gentī -ae -a ⇒ quinientos</li>
+      <li>quīnī -ae -a ⇒ cinco (cada uno)</li>
+      <li>quīnquāgintā ⇒ cincuenta</li>
+      <li>quīnque ⇒ cinco</li>
+      <li>quīnquiēs adv ⇒ cinco veces</li>
+      <li>Quīntīlis -is (mēnsis) ⇒ julio</li>
+      <li>quīntus -a -um ⇒ quinto</li>
+      <li>quis quae quid ⇒ quién, qué</li>
+      <li>quis quid (sī/num/nē ...) ⇒ alguien, alguno, algo</li>
+      <li>quis-nam quid-nam ⇒ quién (pues)</li>
+      <li>quis-quam ⇒ alguien, alguno</li>
+      <li>nec/neque quisquam ⇒ y nadie, y ninguno</li>
+      <li>quis-que quae- quod- ⇒ cada, cada uno</li>
+      <li>quis-quis ⇒ cualquiera que</li>
+      <li>quō adv ⇒ a dónde</li>
+      <li>quod (= quia) ⇒ porque</li>
+      <li>quod n (v. quī) ⇒ que, lo que</li>
+      <li>quō-modo adv ⇒ cómo</li>
+      <li>quoniam ⇒ puesto que, porque</li>
+      <li>quoque adv ⇒ también</li>
+      <li>quot indecl ⇒ cuántos, como</li>
+      <li>quot-annīs adv ⇒ todos los años</li>
+      <li>quotiēs adv ⇒ cuántas veces</li>
+      <li>rāmus -ī m ⇒ rama</li>
+      <li>rapere -iō -uisse raptum ⇒ arrebatar, robar, llevarse</li>
+      <li>rapidus -a -um ⇒ rápido</li>
+      <li>rārō adv ⇒ raramente</li>
+      <li>rārus -a -um ⇒ raro, escaso, poco numeroso</li>
+      <li>ratiō -ōnis f ⇒ razón, explicación</li>
+      <li>ratis -is f ⇒ balsa</li>
+      <li>re-cēdere -cessisse -cessum ⇒ retroceder, retirarse</li>
+      <li>re-cipere -io -cēpisse -ceptum ⇒ recibir, acoger</li>
+      <li>recitāre [1] ⇒ leer en voz alta</li>
+      <li>re-cognōscere -nōvisse -nitum ⇒ reconocer</li>
+      <li>rēctus -a -um ⇒ recto, justo, correcto</li>
+      <li>rēctā (viā) ⇒ en línea recta</li>
+      <li>re-cumbere -cubuisse ⇒ acostarse</li>
+      <li>red-dere -didisse -ditum ⇒ devolver</li>
+      <li>red-imere -ēmisse -ēmptum ⇒ rescatar, redimir</li>
+      <li>red-īre -eō -iisse -itum ⇒ volver</li>
+      <li>re-dūcere -dūxisse -ductum ⇒ hacer volver</li>
+      <li>re-ferre retulisse re-lātum ⇒ volver a traer, devolver</li>
+      <li>regere rēxisse rēctum ⇒ gobernar, dirigir</li>
+      <li>rēgīna -ae f ⇒ reina</li>
+      <li>regiō -ōnis f ⇒ región</li>
+      <li>rēgnāre [1] ⇒ reinar, ser rey</li>
+      <li>rēgula -ae f ⇒ regla</li>
+      <li>re-linquere -līquisse -lictum ⇒ dejar</li>
+      <li>reliquus -a -um ⇒ restante, pl los otros</li>
+      <li>re-manēre -mansisse -mansum ⇒ quedarse, permanecer</li>
+      <li>rēmigāre [1] ⇒ remar</li>
+      <li>re-minīscī dep + gen/ac ⇒ recordar, acordarse (de)</li>
+      <li>re-mittere -mīsisse -missum ⇒ hacer volver, devolver</li>
+      <li>re-movēre -mōvisse -mōtum ⇒ alejar, retirar</li>
+      <li>rēmus -ī m ⇒ remo</li>
+      <li>repente adv ⇒ súbitamente, de repente</li>
+      <li>reperīre repperisse repertum ⇒ encontrar, hallar</li>
+      <li>re-pōnere -posuisse -positum ⇒ volver a poner</li>
+      <li>re-prehendere -disse -hensum ⇒ reprender</li>
+      <li>re-pugnāre [1] ⇒ resistirse, oponerse</li>
+      <li>re-quiēscere -ēvisse -ētum ⇒ descansar</li>
+      <li>re-quīrere -quīsīvisse -quīsītum ⇒ buscar, preguntar</li>
+      <li>rēs reī f ⇒ cosa, hecho, asunto</li>
+      <li>re-sistere -stitisse + dat ⇒ quedarse, resistir</li>
+      <li>re-spondēre -disse -spōnsum ⇒ responder</li>
+      <li>respōnsum -ī n ⇒ respuesta</li>
+      <li>rēte -is n ⇒ red</li>
+      <li>re-tinēre -uisse -tentum ⇒ retener</li>
+      <li>re-trahere -trāxisse -tractum ⇒ hacer volver</li>
+      <li>re-venīre -vēnisse -ventum ⇒ volver</li>
+      <li>revertī -vertisse -versum semidep ⇒ volver</li>
+      <li>re-vocāre [1] ⇒ hacer volver, revocar</li>
+      <li>rēx rēgis m ⇒ rey</li>
+      <li>rīdēre rīsisse rīsum ⇒ reír, reírse de</li>
+      <li>rīdiculus -a -um ⇒ ridículo, cómico</li>
+      <li>rigāre [1] ⇒ regar, irrigar</li>
+      <li>rīpa -ae f ⇒ ribera, orilla</li>
+      <li>rīsus -ūs m ⇒ risa</li>
+      <li>rīvus -ī m ⇒ arroyo</li>
+      <li>rogāre [1] ⇒ rogar, pedir</li>
+      <li>rogitāre [1] ⇒ preguntar insistentemente</li>
+      <li>Rōmānus -a -um ⇒ romano</li>
+      <li>rosa -ae f ⇒ rosa, rosal</li>
+      <li>ruber -bra -brum ⇒ rojo</li>
+      <li>rubēre -uisse ⇒ enrojecer, ruborizarse</li>
+      <li>rudis -e ⇒ rudo, bruto, inculto</li>
+      <li>rūmor -ōris m ⇒ rumor</li>
+      <li>rumpere rūpisse ruptum ⇒ romper</li>
+      <li>rūrī (loc) ⇒ en el campo</li>
+      <li>rūrsus ⇒ de nuevo, otra vez</li>
+      <li>rūs rūris n ⇒ el campo</li>
+      <li>rūsticus -a -um ⇒ rústico, del campo</li>
+      <li>sacculus -ī m ⇒ bolsa (para el dinero)</li>
+      <li>saccus -ī m ⇒ saco</li>
+      <li>sacerdōs -ōtis m/f ⇒ sacerdote, sacerdotisa</li>
+      <li>saeculum -ī n ⇒ siglo</li>
+      <li>saepe adv ⇒ a menudo, muchas veces</li>
+      <li>saevus -a -um ⇒ rabioso, cruel</li>
+      <li>sagitta -ae f ⇒ flecha, saeta</li>
+      <li>sāl salis m ⇒ sal</li>
+      <li>salīre -uisse saltum ⇒ saltar</li>
+      <li>salūs -ūtis f ⇒ salud, salvación</li>
+      <li>salūtem dīcere + dat ⇒ saludar</li>
+      <li>salūtāre [1] ⇒ saludar</li>
+      <li>salvāre [1] ⇒ salvar</li>
+      <li>salvē -ēte ⇒ ¡salud!, ¡hola!, buenos días</li>
+      <li>salvēre iubēre ⇒ saludar</li>
+      <li>salvus -a -um ⇒ salvo, sano</li>
+      <li>sānāre [1] ⇒ curar</li>
+      <li>sānē adv ⇒ ciertamente, realmente</li>
+      <li>sanguis -inis m ⇒ sangre</li>
+      <li>sānus -a -um ⇒ sano</li>
+      <li>sapere -iō sapiisse ⇒ tener juicio, saber</li>
+      <li>sapiēns -entis adj ⇒ sabio</li>
+      <li>satis adv ⇒ bastante</li>
+      <li>saxum -ī n ⇒ roca</li>
+      <li>scaena -ae f ⇒ escena</li>
+      <li>scaenicus -a -um ⇒ teatral</li>
+      <li>scalpellum -ī n ⇒ escalpelo, bisturí</li>
+      <li>scamnum -ī n ⇒ banquillo</li>
+      <li>scelestus -a -um ⇒ malvado, criminal</li>
+      <li>scelus -eris n ⇒ crimen</li>
+      <li>scīlicet adv ⇒ por supuesto</li>
+      <li>scindere scidisse scissum ⇒ desgarrar, rasgar</li>
+      <li>scīre scīvisse scītum ⇒ saber, estar instruido</li>
+      <li>scrībere scrīpsisse scrīptum ⇒ escribir</li>
+      <li>scūtum -ī n ⇒ escudo</li>
+      <li>sē sibi sē-cum ⇒ se, sí, consigo, con él mismo</li>
+      <li>secāre -uisse sectum ⇒ cortar</li>
+      <li>secundum prp + ac ⇒ a lo largo de</li>
+      <li>secundus -a -um ⇒ segundo, favorable</li>
+      <li>sed ⇒ sino, pero</li>
+      <li>sē-decim ⇒ dieciséis</li>
+      <li>sedēre sēdisse sessum ⇒ estar sentado</li>
+      <li>sella -ae f ⇒ silla</li>
+      <li>semel adv ⇒ una vez</li>
+      <li>sēmen -inis n ⇒ grano, simiente</li>
+      <li>semper adv ⇒ siempre</li>
+      <li>senex senis m ⇒ hombre viejo, anciano</li>
+      <li>sēnī -ae -a ⇒ seis (cada uno)</li>
+      <li>sententia -ae f ⇒ opinión, sentido, frase</li>
+      <li>sentīre sēnsisse sēnsum ⇒ sentir, pensar, opinar</li>
+      <li>septem ⇒ siete</li>
+      <li>September -bris (mēnsis) ⇒ septiembre</li>
+      <li>septen-decim ⇒ diecisiete</li>
+      <li>septentriōnēs -um m pl ⇒ norte</li>
+      <li>septimus -a -um ⇒ séptimo</li>
+      <li>septin-gentī -ae -a ⇒ setecientos</li>
+      <li>septuāgintā ⇒ setenta</li>
+      <li>sequī secūtum esse dep ⇒ seguir</li>
+      <li>serēnus -a -um ⇒ sereno, sin nubes</li>
+      <li>serere sēvisse satum ⇒ sembrar, plantar</li>
+      <li>sērius -a -um ⇒ serio, grave</li>
+      <li>sermō -ōnis m ⇒ conversación, lenguaje</li>
+      <li>servāre [1] ⇒ conservar, salvar</li>
+      <li>servīre -īvisse -ītum + dat ⇒ ser esclavo de, servir a</li>
+      <li>servitūs -ūtis f ⇒ esclavitud, servidumbre</li>
+      <li>servus -ī m ⇒ esclavo, siervo</li>
+      <li>ses-centī -ae -a ⇒ seiscientos</li>
+      <li>sēsē ⇒ se, sí (pron. personal)</li>
+      <li>sēstertius -ī m ⇒ sestercio (moneda)</li>
+      <li>seu v. sī-ve/seu</li>
+      <li>sevērus -a -um ⇒ severo</li>
+      <li>sex ⇒ seis</li>
+      <li>sexāgintā ⇒ sesenta</li>
+      <li>sexiēs adv ⇒ seis veces</li>
+      <li>Sextīlis -is (mēnsis) ⇒ agosto</li>
+      <li>sextus -a -um ⇒ sexto</li>
+      <li>sī conj ⇒ si</li>
+      <li>sīc adv ⇒ así, de este modo</li>
+      <li>siccus -a -um ⇒ seco</li>
+      <li>sīc-ut adv ⇒ como, así como</li>
+      <li>signāre [1] ⇒ marcar, sellar</li>
+      <li>significāre [1] ⇒ indicar, significar</li>
+      <li>significātiō -ōnis f ⇒ significación</li>
+      <li>signum -ī n ⇒ señal, sello, estatua</li>
+      <li>silentium -ī n ⇒ silencio</li>
+      <li>silēre siluisse ⇒ callarse, guardar silencio</li>
+      <li>silva -ae f ⇒ bosque, selva</li>
+      <li>similis -e ⇒ parecido, semejante</li>
+      <li>simul adv ⇒ al mismo tiempo</li>
+      <li>simul atque conj + perf ⇒ en cuanto</li>
+      <li>sīn conj ⇒ pero si</li>
+      <li>sine prp +abl ⇒ sin</li>
+      <li>sinere sīvisse situm ⇒ dejar, permitir</li>
+      <li>singulī -ae -a ⇒ uno (cada uno), cada</li>
+      <li>sinister -tra -trum ⇒ izquierdo,</li>
+      <li>sinistra -ae f ⇒ la (mano) izquierda</li>
+      <li>sinus -ūs m ⇒ pliegue (de la toga)</li>
+      <li>sī-quidem ⇒ puesto que</li>
+      <li>sitis -is f ⇒ sed</li>
+      <li>situs -a -um ⇒ situado</li>
+      <li>sī-ve/ seu ⇒ o si, o</li>
+      <li>s. ... s. ⇒ o... o, ya sea... ya sea</li>
+      <li>sōl -is m ⇒ sol</li>
+      <li>solēre -itum esse semidep ⇒ soler, acostumbrar</li>
+      <li>solum -ī n ⇒ suelo, piso</li>
+      <li>sōlum adv ⇒ sólo</li>
+      <li>sōlus -a -um ⇒ solo</li>
+      <li>solvere solvisse solūtum ⇒ soltar, pagar, cumplir; nāvem solvere ⇒ levar anclas, arpar</li>
+      <li>somnus -ī m ⇒ sueño</li>
+      <li>sonus -ī m ⇒ sonido</li>
+      <li>sordēs -ium f pl ⇒ suciedad</li>
+      <li>sordidus -a -um ⇒ sucio, sórdido</li>
+      <li>soror -ōris f ⇒ hermana</li>
+      <li>spargere -sisse -sum ⇒ esparcir, dispersar</li>
+      <li>speciēs -ēī f ⇒ aspecto, especie</li>
+      <li>spectāre [1] ⇒ contemplar, mirar</li>
+      <li>spectātor -ōris m ⇒ espectador</li>
+      <li>speculum -ī n ⇒ espejo</li>
+      <li>spērāre [1] ⇒ esperar, confiar</li>
+      <li>spēs -eī f ⇒ esperanza</li>
+      <li>-spicere -iō -spexisse -spectum</li>
+      <li>spīrāre [1] ⇒ respirar</li>
+      <li>stāre stetisse stātum ⇒ estar de pie, estar quieto</li>
+      <li>statim adv ⇒ en seguida, luego</li>
+      <li>statuere -uisse -ūtum ⇒ determinar, fijar</li>
+      <li>stēlla -ae f ⇒ estrella</li>
+      <li>sternere strāvisse strātum ⇒ tender, extender</li>
+      <li>stertere ⇒ roncar, dormir profundamente</li>
+      <li>stilus -ī m ⇒ punzón, estilo</li>
+      <li>stipendium -ī n ⇒ paga, servicio militar</li>
+      <li>stipendia merēre ⇒ ser soldado</li>
+      <li>strepitus -ūs m ⇒ ruido</li>
+      <li>studēre -uisse + dat ⇒ afanarse, dedicarse</li>
+      <li>studiōsus -a -um + gen ⇒ aficionado, deseoso</li>
+      <li>studium -ī n ⇒ afición, afán, estudio</li>
+      <li>stultus -a -um ⇒ necio, tonto</li>
+      <li>stupēre -uisse ⇒ quedarse atónito</li>
+      <li>suādēre suāsisse suāsum + dat ⇒ aconsejar</li>
+      <li>sub prp + abl/ac ⇒ bajo, debajo, al pie de</li>
+      <li>sub-īre -eō -iisse -itum ⇒ ponerse bajo, subir</li>
+      <li>subitus -a -um ⇒ súbito, repentino</li>
+      <li>subitō adv ⇒ de repente, súbitamente</li>
+      <li>sub-mergere -sisse -sum ⇒ sumergir, hundir</li>
+      <li>sub-urbānus -a -um ⇒ vecino a Roma</li>
+      <li>sūmere sūmpsisse sūmptum ⇒ tomar</li>
+      <li>summus -a -um sup ⇒ el más alto/elevado</li>
+      <li>super prp + ac ⇒ sobre, encima de</li>
+      <li>super prp + abl ⇒ sobre, acerca de</li>
+      <li>superbus -a -um ⇒ soberbio, orgulloso</li>
+      <li>super-esse -fuisse ⇒ quedar, sobrar</li>
+      <li>superior -ius comp ⇒ más alto, superior</li>
+      <li>superus -a -um ⇒ de arriba, superior</li>
+      <li>supplicium -ī n ⇒ castigo, suplicio</li>
+      <li>suprā prp + ac ⇒ encima de, sobre</li>
+      <li>suprā adv ⇒ arriba, encima</li>
+      <li>surdus -a -um ⇒ sordo</li>
+      <li>surgere sur-rēxisse sur-rēctum ⇒ levantarse</li>
+      <li>sur-ripere -iō -ripuisse -reptum ⇒ robar</li>
+      <li>sūrsum adv ⇒ arriba, hacia arriba</li>
+      <li>suscitāre [1] ⇒ despertar, resucitar</li>
+      <li>su-spicere -io -spexisse -spectum ⇒ levantar la vista (a), mirar de abajo arriba</li>
+      <li>sus-tinēre -uisse -tentum ⇒ sostener, soportar</li>
+      <li>suus -a -um ⇒ su, suyo</li>
+      <li>syllaba -ae f ⇒ sílaba</li>
+      <li>tabella -ae f ⇒ tablilla (“cuaderno” de cera)</li>
+      <li>tabellārius -ī m ⇒ cartero, mensajero</li>
+      <li>taberna -ae f ⇒ tienda</li>
+      <li>tabernārius -ī m ⇒ tendero</li>
+      <li>tabula -ae f ⇒ tabla, tabla encerada</li>
+      <li>tacēre -uisse -itum ⇒ callarse</li>
+      <li>tacitus -a -um ⇒ callado, silencioso</li>
+      <li>talentum -ī n ⇒ talento</li>
+      <li>tālis -e ⇒ tal, de tal género</li>
+      <li>tam ⇒ tan, tanto</li>
+      <li>tam-diū adv ⇒ por tanto tiempo</li>
+      <li>tamen ⇒ sin embargo, con todo</li>
+      <li>tam-quam ⇒ como, igual que</li>
+      <li>tandem adv ⇒ en fin, por fin</li>
+      <li>tangere tetigisse tāctum ⇒ tocar</li>
+      <li>tantum -ī n ⇒ tanta cantidad</li>
+      <li>tantum adv ⇒ tanto, sólo</li>
+      <li>tantun-dem adv ⇒ tanto, lo mismo</li>
+      <li>tantus -a -um ⇒ tan grande</li>
+      <li>tardus -a -um ⇒ lento, tardo, tardío</li>
+      <li>tata -ae m ⇒ papá</li>
+      <li>taurus -ī m ⇒ toro</li>
+      <li>tēctum -ī n ⇒ techo</li>
+      <li>temerārius -a -um ⇒ irreflexivo, imprudente</li>
+      <li>tempestās -ātis f ⇒ tempestad</li>
+      <li>templum -ī n ⇒ templo</li>
+      <li>tempus -oris n ⇒ tiempo</li>
+      <li>tenebrae -ārum f pl ⇒ oscuridad, tinieblas</li>
+      <li>tenebricōsus -a -um ⇒ tenebroso</li>
+      <li>tenēre -uisse tentum ⇒ tener, retener</li>
+      <li>tenuis -e ⇒ delgado, débil, tenue</li>
+      <li>ter adv ⇒ tres veces</li>
+      <li>tergēre -sisse -sum ⇒ enjugar, secar</li>
+      <li>tergum -ī n ⇒ espalda</li>
+      <li>ternī -ae -a ⇒ tres (cada uno)</li>
+      <li>terra -ae f ⇒ tierra, país</li>
+      <li>terrēre -uisse -itum ⇒ asustar, espantar</li>
+      <li>terribilis -e ⇒ terrible</li>
+      <li>tertius -a -um ⇒ tercero</li>
+      <li>testis -is m/f ⇒ testigo</li>
+      <li>theātrum -ī n ⇒ teatro</li>
+      <li>tībiae -ārum f pl ⇒ flauta</li>
+      <li>tībīcen -inis m ⇒ tocador de flauta</li>
+      <li>timēre -uisse ⇒ temer</li>
+      <li>timidus -a -um ⇒ miedoso, tímido</li>
+      <li>timor -ōris m ⇒ miedo, temor</li>
+      <li>tinnīre ⇒ sonar, tintinear, hacer sonar</li>
+      <li>titulus -ī m ⇒ título</li>
+      <li>toga -ae f ⇒ toga</li>
+      <li>togātus -a -um ⇒ togado, vestido de toga</li>
+      <li>tollere sus-tulisse sub-lātum ⇒ levantar, quitar</li>
+      <li>tonitrus -ūs m ⇒ trueno</li>
+      <li>tot indecl ⇒ tantos</li>
+      <li>totiēs adv ⇒ tantas veces</li>
+      <li>tōtus -a -um ⇒ todo, entero</li>
+      <li>trā-dere -didisse -ditum ⇒ entregar, dar</li>
+      <li>trahere trāxisse tractum ⇒ arrastrar</li>
+      <li>tranquillitās -ātis f ⇒ calma, tranquilidad</li>
+      <li>tranquillus -a -um ⇒ sereno, tranquilo, en calma</li>
+      <li>trāns prp + ac ⇒ por encima de, al otro lado de</li>
+      <li>trāns-ferre -tulisse -lātum ⇒ llevar (a otro sitio), trasladar</li>
+      <li>trāns-īre -eō -iisse -itum ⇒ pasar (por encima de), atravesar, cruzar</li>
+      <li>tre-centī -ae -a ⇒ trescientos</li>
+      <li>trē-decim ⇒ trece</li>
+      <li>tremere -uisse ⇒ temblar</li>
+      <li>trēs tria ⇒ tres</li>
+      <li>trīcēsimus -a -um ⇒ trigésimo</li>
+      <li>trīclīnium -ī n ⇒ comedor</li>
+      <li>trīgintā ⇒ treinta</li>
+      <li>trīnī -ae -a ⇒ tres, de tres en tres</li>
+      <li>trīstis -e ⇒ triste</li>
+      <li>trīstitia -ae f ⇒ tristeza</li>
+      <li>tū tē tibi tē-cum ⇒ tú, te, ti, contigo</li>
+      <li>tuērī tu(i)tum esse dep ⇒ proteger, mirar por</li>
+      <li>tum adv ⇒ entonces, después</li>
+      <li>tumultuārī [1] dep ⇒ meter ruido, alborotar</li>
+      <li>tumultus -ūs m ⇒ tumulto</li>
+      <li>tunc adv ⇒ entonces</li>
+      <li>tunica -ae f ⇒ túnica</li>
+      <li>turba -ae f ⇒ muchedumbre, multitud</li>
+      <li>turbāre [1] ⇒ agitar, revolver</li>
+      <li>turbidus -a -um ⇒ agitado, tempestuoso</li>
+      <li>turgid(ul)us -a -um ⇒ hinchado</li>
+      <li>turpis -e ⇒ feo, desagradable, vergonzoso</li>
+      <li>tūtus -a -um ⇒ seguro, protegido</li>
+      <li>tuus -a -um ⇒ tu, tuyo</li>
+      <li>tyrannus -ī m ⇒ tirano</li>
+      <li>ubi adv ⇒ dónde, donde</li>
+      <li>ubi prīmum + perf ⇒ tan pronto como</li>
+      <li>ubī-que adv ⇒ en todas partes</li>
+      <li>ūllus -a -um ⇒ algún, un, uno</li>
+      <li>neque/nec ūllus ⇒ y ningún</li>
+      <li>ulterior -ius ⇒ ulterior, más alejado</li>
+      <li>ultimus -a -um ⇒ último</li>
+      <li>ultrā prp + ac ⇒ al otro lado de, allende</li>
+      <li>ululāre [1] ⇒ aullar</li>
+      <li>umbra -a f ⇒ sombra</li>
+      <li>umerus -ī m ⇒ hombro</li>
+      <li>ūmidus -a -um ⇒ húmedo, mojado</li>
+      <li>umquam adv ⇒ alguna vez (tras negación) nunca, jamás</li>
+      <li>ūnā adv ⇒ junto</li>
+      <li>unde adv ⇒ de dónde, de donde</li>
+      <li>ūn-dē-centum ⇒ noventa y nueve</li>
+      <li>ūn-decim ⇒ once</li>
+      <li>ūndecimus -a -um ⇒ undécimo</li>
+      <li>ūn-dē-trīgintā ⇒ veintinueve</li>
+      <li>ūn-dē-vīgintī ⇒ diecinueve</li>
+      <li>ūniversus -a -um ⇒ entero</li>
+      <li>ūnus -a -um ⇒ un, uno, solo</li>
+      <li>urbānus -a -um ⇒ de la ciudad, urbano</li>
+      <li>urbs -bis f ⇒ ciudad</li>
+      <li>ūrere ussisse ustum ⇒ quemar, abrasar</li>
+      <li>ūsque ⇒ hasta, desde</li>
+      <li>ut adv ⇒ como</li>
+      <li>ut (+ subj) conj ⇒ que, para que</li>
+      <li>uter utra utrum ⇒ cuál de los dos</li>
+      <li>uter-que utra- utrum- ⇒ (cada uno de) los dos</li>
+      <li>ūtī ūsum esse dep + abl ⇒ servirse de, usar, gozar de</li>
+      <li>utinam ⇒ ojalá</li>
+      <li>utrum... an ⇒ ¿...o ...? si... o</li>
+      <li>ūva -ae f ⇒ uva</li>
+      <li>uxor -ōris f ⇒ esposa, mujer</li>
+      <li>vacuus -a -um ⇒ vacío</li>
+      <li>vāgīre -isse -ītum ⇒ berrear, gemir, llorar</li>
+      <li>valdē adv ⇒ mucho, muy</li>
+      <li>valē -ēte ⇒ adiós</li>
+      <li>valēre -uisse ⇒ ser fuerte, estar bien</li>
+      <li>valētūdō -inis f ⇒ salud</li>
+      <li>validus -a -um ⇒ fuerte, vigoroso</li>
+      <li>vallis -is f ⇒ valle</li>
+      <li>vāllum -ī n ⇒ vallado, empalizada</li>
+      <li>varius -a -um ⇒ vario, diverso</li>
+      <li>vās vāsis n, pl -a -ōrum ⇒ vaso, vajilla</li>
+      <li>-ve ⇒ o</li>
+      <li>vehere vēxisse vectum ⇒ llevar, transportar </li>
+      <li>equō vehī ⇒ cabalgar, montar a caballo</li>
+      <li>vel ⇒ o, o bien</li>
+      <li>velle volō voluisse ⇒ querer, desear</li>
+      <li>vēlōx -ōcis adj ⇒ veloz, rápido</li>
+      <li>vēlum -ī n ⇒ vela</li>
+      <li>vel-ut ⇒ como</li>
+      <li>vēna -ae f ⇒ vena</li>
+      <li>vēn-dere -didisse -ditum ⇒ vender</li>
+      <li>venīre vēnisse ventum ⇒ venir</li>
+      <li>venter -tris m ⇒ vientre</li>
+      <li>ventus -ī m ⇒ viento</li>
+      <li>venustus -a -um ⇒ gracioso, amable</li>
+      <li>vēr vēris n ⇒ primavera</li>
+      <li>verbera -um n pl ⇒ paliza</li>
+      <li>verberāre [1] ⇒ azotar, golpear</li>
+      <li>verbum -ī n ⇒ palabra</li>
+      <li>verērī -itum esse dep ⇒ temer, venerar, respetar</li>
+      <li>vērē adv ⇒ verdaderamente, realmente</li>
+      <li>vērō ⇒ en verdad, mas, pero</li>
+      <li>neque/nec vērō ⇒ pero no</li>
+      <li>versārī [1] dep ⇒ dar vueltas, hallarse, estar</li>
+      <li>versiculus -ī m ⇒ verso corto</li>
+      <li>versus -ūs m ⇒ línea, verso</li>
+      <li>versus: ad ... versus adv ⇒ en la dirección de, hacia</li>
+      <li>vertere -tisse -sum ⇒ hacer girar, volver</li>
+      <li>vērum ⇒ pero, sino</li>
+      <li>vērus -a -um ⇒ verdadero, n verdad</li>
+      <li>vesper -erī m ⇒ (la) tarde</li>
+      <li>vesperī adv ⇒ por la tarde</li>
+      <li>vester -tra -trum ⇒ vuestro</li>
+      <li>vestīgium -ī n ⇒ huella</li>
+      <li>vestīmentum -ī n ⇒ vestido, vestimenta, ropa</li>
+      <li>vestīre -īvisse -ītum ⇒ vestir</li>
+      <li>vestis -is f ⇒ vestido, ropa</li>
+      <li>vestrum gen ⇒ de vosotros, vuestro</li>
+      <li>vetāre -uisse -itum ⇒ prohibir</li>
+      <li>vetus -eris ⇒ viejo, anciano</li>
+      <li>via -ae f ⇒ camino, via, calle</li>
+      <li>vīcēsimus -a -um ⇒ vigésimo</li>
+      <li>victor -ōris m, adj ⇒ vencedor, victorioso</li>
+      <li>victōria -ae f ⇒ victoria</li>
+      <li>vidēre vīdisse vīsum ⇒ ver</li>
+      <li>vidērī pas ⇒ parecer</li>
+      <li>vigilāre [1] ⇒ velar, estar despierto</li>
+      <li>vigilia -ae f ⇒ vigilia, guardia nocturna</li>
+      <li>vīgintī ⇒ veinte</li>
+      <li>vīlis -e ⇒ barato</li>
+      <li>vīlla -ae f ⇒ casa de campo, villa</li>
+      <li>vincere vīcisse victum ⇒ vencer</li>
+      <li>vincīre vīnxisse vīnctum ⇒ atar, encadenar</li>
+      <li>vīnea -ae f ⇒ viña</li>
+      <li>vīnum -ī n ⇒ vino</li>
+      <li>vir -ī m ⇒ hombre, marido</li>
+      <li>vīrēs -ium f pl ⇒ fuerza</li>
+      <li>virga -ae f ⇒ bastón, vara</li>
+      <li>virgō -inis f ⇒ muchacha, jovencita</li>
+      <li>virtūs -ūtis f ⇒ valor, valentía</li>
+      <li>vīs, ac vim, abl vī ⇒ violencia, vigor, poder</li>
+      <li>viscera -um n pl ⇒ vísceras, entrañas</li>
+      <li>vīsere vīsisse vīsum ⇒ ir a ver, visitar</li>
+      <li>vīta -ae f ⇒ vida</li>
+      <li>vītāre [1] ⇒ evitar</li>
+      <li>vītis -is f ⇒ vid</li>
+      <li>vīvere vīxisse victum ⇒ vivir</li>
+      <li>vīvus -a -um ⇒ vivo</li>
+      <li>vix adv ⇒ apenas</li>
+      <li>vocābulum -ī n ⇒ vocablo, palabra</li>
+      <li>vōcālis -is f ⇒ vocal</li>
+      <li>vocāre [1] ⇒ llamar, invitar</li>
+      <li>volāre [1] ⇒ volar</li>
+      <li>voluntās -ātis f ⇒ voluntad</li>
+      <li>vorāgō -inis f ⇒ remolino, vorágine</li>
+      <li>vorāre [1] ⇒ devorar, engullir</li>
+      <li>vōs vōbīs ⇒ vosotros, os</li>
+      <li>vōx vōcis f ⇒ voz</li>
+      <li>vulnerāre [1] ⇒ herir</li>
+      <li>vulnus -eris n ⇒ herida</li>
+      <li>vultus -ūs m ⇒ rostro, cara</li>
+      <li>zephyrus -ī m ⇒ céfiro, viento del oeste</li>
+    </ul>
+    </div>
+    <div style="border-left: 2px solid black; padding-left: 5px;">
+      <h2>Abreviaciones</h2>
+      <div class="row">
+        <div class="column">
+          <ul class="voc">
+            <li>"-" ⇒ "tema de presente "</li>
+            <li>"/" ⇒ "o, o bien"</li>
+            <li>"[1]" ⇒ "1ª conjugación"</li>
+            <li>"[2]" ⇒ "2ª conjugación"</li>
+            <li>"[3]" ⇒ "3ª conjugación"</li>
+            <li>"[4]" ⇒ "4ª conjugación"</li>
+            <li>"~" ⇒ "tema de perfecto"</li>
+            <li>"<" ⇒ "procede de"</li>
+            <li>"»-" ⇒ "tema de supino"</li>
+            <li>"1" ⇒ "1ª persona"</li>
+            <li>"2" ⇒ "2ª persona"</li>
+            <li>"3" ⇒ "3ª persona"</li>
+            <li>"abl" ⇒ "ablativo "</li>
+            <li>"ac" ⇒ "acusativo "</li>
+            <li>"act" ⇒ "activa "</li>
+            <li>"adj" ⇒ "adjetivo "</li>
+            <li>"adv" ⇒ "adverbio "</li>
+            <li>"cap" ⇒ "capítulo "</li>
+            <li>"comp" ⇒ "comparativo "</li>
+            <li>"conj" ⇒ "conjunción "</li>
+            <li>"cons" ⇒ "consonante "</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="voc">
+            <li>"dat" ⇒ "dativo "</li>
+            <li>"decl" ⇒ "declinación "</li>
+            <li>"dep" ⇒ "deponente "</li>
+            <li>"etc" ⇒ "etcétera "</li>
+            <li>"f" ⇒ "femenino"</li>
+            <li>"fem" ⇒ "femenino "</li>
+            <li>"fut" ⇒ "futuro "</li>
+            <li>"gen" ⇒ "genitivo "</li>
+            <li>"i.e." ⇒ "id est (es decir)"</li>
+            <li>"imp" ⇒ "imperativo "</li>
+            <li>"imperf" ⇒ "imperfecto "</li>
+            <li>"ind" ⇒ "indicativo "</li>
+            <li>"indecl" ⇒ "indeclinable "</li>
+            <li>"inf" ⇒ "infinitivo "</li>
+            <li>"loc" ⇒ "locativo "</li>
+            <li>"m" ⇒ "masculino "</li>
+            <li>"masc" ⇒ "masculino "</li>
+            <li>"n" ⇒ "neutro "</li>
+            <li>"neut" ⇒ "neutro "</li>
+            <li>"nom" ⇒ "nominativo "</li>
+            <li>"p. ej." ⇒ "por ejemplo"</li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul class="voc">
+            <li>"pág" ⇒ "página"</li>
+            <li>"part" ⇒ "participio"</li>
+            <li>"pas" ⇒ "pasiva"</li>
+            <li>"perf" ⇒ "perfecto"</li>
+            <li>"pers" ⇒ "persona"</li>
+            <li>"pl" ⇒ "plural"</li>
+            <li>"plcpf" ⇒ "pluscuamperfecto"</li>
+            <li>"plur" ⇒ "plural"</li>
+            <li>"pos" ⇒ "posesivo"</li>
+            <li>"pres" ⇒ "presente"</li>
+            <li>"pron" ⇒ "pronombre"</li>
+            <li>"prp" ⇒ "preposición"</li>
+            <li>"semidep" ⇒ "semideponente"</li>
+            <li>"sg" ⇒ "singular "</li>
+            <li>"sing" ⇒ "singular"</li>
+            <li>"subj" ⇒ "subjuntivo"</li>
+            <li>"sup" ⇒ "superlativo"</li>
+            <li>"sust" ⇒ "sustantivo"</li>
+            <li>"v" ⇒ "ver"</li>
+            <li>"voc" ⇒ "vocativo"</li>
+            <li>"--------"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      // 1. Limpieza de macrones
+      function quitarMacrones(texto) {
+        return texto
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+      }
+
+      // 2. Motor de búsqueda y filtrado
+      function filtrar() {
+        let textoBusqueda = document.getElementById('busqueda').value.toLowerCase();
+        textoBusqueda = quitarMacrones(textoBusqueda);
+
+        const lista = document.querySelectorAll('#lista li');
+        const mensajeVacio = document.getElementById('mensaje-vacio');
+
+        // Si la caja está vacía, ocultar todo y salir
+        if (textoBusqueda === "") {
+        lista.forEach(item => item.style.display = 'none');
+        mensajeVacio.style.display = 'none';
+        return; 
+        }
+
+        let encontrados = 0;
+
+        // Recorrer lista y buscar coincidencias
+        lista.forEach(item => {
+          let textoItem = item.textContent.toLowerCase();
+          textoItem = quitarMacrones(textoItem);
+
+          if (textoItem.includes(textoBusqueda)) {
+          item.style.display = 'list-item'; 
+          encontrados++; 
+          } else {
+          item.style.display = 'none'; 
+          }
+        });
+
+        // Mostrar u ocultar mensaje de error
+        if (encontrados === 0) {
+          mensajeVacio.style.display = 'block';
+        } else {
+            mensajeVacio.style.display = 'none';
+          }
+      }
+
+      // 3. Restaurar estado inicial
+      function limpiar() {
+        const inputBusqueda = document.getElementById('busqueda');
+        inputBusqueda.value = "";
+
+        const lista = document.querySelectorAll('#lista li');
+        lista.forEach(item => item.style.display = 'none');
+
+        document.getElementById('mensaje-vacio').style.display = 'none';
+
+        inputBusqueda.focus(); // Devuelve el cursor al buscador
+      }
+    </script>
+  </body>
+</html>
